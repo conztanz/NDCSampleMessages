@@ -55,12 +55,12 @@
           <MarketingCarrier>
             <AirlineID>WF</AirlineID>
             <Name>Wideroe</Name>
-            <FlightNumber>9363</FlightNumber>
+            <FlightNumber>9364</FlightNumber>
           </MarketingCarrier>
           <OperatingCarrier>
             <AirlineID>WF</AirlineID>
             <Name>Wideroe</Name>
-            <FlightNumber>93643</FlightNumber>
+            <FlightNumber>9364</FlightNumber>
           </OperatingCarrier>
           <Equipment>
             <AircraftCode>DH8</AircraftCode>
