@@ -66,117 +66,117 @@
             <AircraftCode>321</AircraftCode>
             <Name>321 - AIRBUS INDUSTRIE A321 JET</Name>
           </Equipment>
-		  <ClassOfService>
-					<Code>M</Code>
-				</ClassOfService>
-          <FlightDetail>
-            <FlightDuration>
-              <Value>PT2H10M</Value>
-            </FlightDuration>
-          </FlightDetail>
-        </FlightSegment>
-        <FlightSegment SegmentKey="SEG2">
-          <Departure>
-            <AirportCode>FRA</AirportCode>
-            <Date>2016-05-20</Date>
-            <Time>16:40</Time>
-            <AirportName>Frankfurt International</AirportName>
-          </Departure>
-          <Arrival>
-            <AirportCode>TXL</AirportCode>
-            <Date>2016-05-20</Date>
-            <Time>17:50</Time>
-            <AirportName>Berlin Tegel Airport</AirportName>
-          </Arrival>
-          <MarketingCarrier>
-            <AirlineID>C9</AirlineID>
-            <Name>Kronos Air</Name>
-            <FlightNumber>1125</FlightNumber>
-          </MarketingCarrier>
-          <OperatingCarrier>
-            <AirlineID>C9</AirlineID>
-            <Name>Kronos Air</Name>
-            <FlightNumber>1125</FlightNumber>
-          </OperatingCarrier>
-          <Equipment>
-            <AircraftCode>321</AircraftCode>
-            <Name>321 - AIRBUS INDUSTRIE A321 JET</Name>
-          </Equipment>
-		  <ClassOfService>
-					<Code>M</Code>
-				</ClassOfService>
-          <FlightDetail>
-            <FlightDuration>
-              <Value>PT1H10M</Value>
-            </FlightDuration>
-          </FlightDetail>
-        </FlightSegment>
-        <FlightSegment SegmentKey="SEG27">
-          <Departure>
-            <AirportCode>TXL</AirportCode>
-            <Date>2016-05-30</Date>
-            <Time>01:20</Time>
-            <AirportName>Berlin Tegel Airport</AirportName>
-          </Departure>
-          <Arrival>
-            <AirportCode>FRA</AirportCode>
-            <Date>2016-05-30</Date>
-            <Time>02:30</Time>
-            <AirportName>Frankfurt International</AirportName>
-          </Arrival>
-          <MarketingCarrier>
-            <AirlineID>C9</AirlineID>
-            <Name>Kronos Air</Name>
-            <FlightNumber>1124</FlightNumber>
-          </MarketingCarrier>
-          <OperatingCarrier>
-            <AirlineID>C9</AirlineID>
-            <Name>Kronos Air</Name>
-            <FlightNumber>1124</FlightNumber>
-          </OperatingCarrier>
-          <Equipment>
-            <AircraftCode>321</AircraftCode>
-            <Name>321 - AIRBUS INDUSTRIE A321 JET</Name>
-          </Equipment>
-		  <ClassOfService>
-					<Code>M</Code>
-				</ClassOfService>
-          <FlightDetail>
-            <FlightDuration>
-              <Value>PT1H10M</Value>
-            </FlightDuration>
-          </FlightDetail>
-        </FlightSegment>
-        <FlightSegment SegmentKey="SEG28">
-          <Departure>
-            <AirportCode>FRA</AirportCode>
-            <Date>2016-05-30</Date>
-            <Time>07:30</Time>
-            <AirportName>Frankfurt International</AirportName>
-          </Departure>
-          <Arrival>
-            <AirportCode>BCN</AirportCode>
-            <Date>2016-05-30</Date>
-            <Time>09:30</Time>
-            <AirportName>Barcelona Airport</AirportName>
-          </Arrival>
-          <MarketingCarrier>
-            <AirlineID>C9</AirlineID>
-            <Name>Kronos Air</Name>
-            <FlightNumber>1124</FlightNumber>
-          </MarketingCarrier>
-          <OperatingCarrier>
-            <AirlineID>C9</AirlineID>
-            <Name>Kronos Air</Name>
-            <FlightNumber>1124</FlightNumber>
-          </OperatingCarrier>
-          <Equipment>
-            <AircraftCode>321</AircraftCode>
-            <Name>321 - AIRBUS INDUSTRIE A321 JET</Name>
-          </Equipment>
-		  <ClassOfService>
-					<Code>M</Code>
-				</ClassOfService>
+          <ClassOfService>
+              <Code>M</Code>
+            </ClassOfService>
+              <FlightDetail>
+                <FlightDuration>
+                  <Value>PT2H10M</Value>
+                </FlightDuration>
+              </FlightDetail>
+            </FlightSegment>
+            <FlightSegment SegmentKey="SEG2">
+              <Departure>
+                <AirportCode>FRA</AirportCode>
+                <Date>2016-05-20</Date>
+                <Time>16:40</Time>
+                <AirportName>Frankfurt International</AirportName>
+              </Departure>
+              <Arrival>
+                <AirportCode>TXL</AirportCode>
+                <Date>2016-05-20</Date>
+                <Time>17:50</Time>
+                <AirportName>Berlin Tegel Airport</AirportName>
+              </Arrival>
+              <MarketingCarrier>
+                <AirlineID>C9</AirlineID>
+                <Name>Kronos Air</Name>
+                <FlightNumber>1125</FlightNumber>
+              </MarketingCarrier>
+              <OperatingCarrier>
+                <AirlineID>C9</AirlineID>
+                <Name>Kronos Air</Name>
+                <FlightNumber>1125</FlightNumber>
+              </OperatingCarrier>
+              <Equipment>
+                <AircraftCode>321</AircraftCode>
+                <Name>321 - AIRBUS INDUSTRIE A321 JET</Name>
+              </Equipment>
+          <ClassOfService>
+              <Code>M</Code>
+            </ClassOfService>
+              <FlightDetail>
+                <FlightDuration>
+                  <Value>PT1H10M</Value>
+                </FlightDuration>
+              </FlightDetail>
+            </FlightSegment>
+            <FlightSegment SegmentKey="SEG27">
+              <Departure>
+                <AirportCode>TXL</AirportCode>
+                <Date>2016-05-30</Date>
+                <Time>01:20</Time>
+                <AirportName>Berlin Tegel Airport</AirportName>
+              </Departure>
+              <Arrival>
+                <AirportCode>FRA</AirportCode>
+                <Date>2016-05-30</Date>
+                <Time>02:30</Time>
+                <AirportName>Frankfurt International</AirportName>
+              </Arrival>
+              <MarketingCarrier>
+                <AirlineID>C9</AirlineID>
+                <Name>Kronos Air</Name>
+                <FlightNumber>1124</FlightNumber>
+              </MarketingCarrier>
+              <OperatingCarrier>
+                <AirlineID>C9</AirlineID>
+                <Name>Kronos Air</Name>
+                <FlightNumber>1124</FlightNumber>
+              </OperatingCarrier>
+              <Equipment>
+                <AircraftCode>321</AircraftCode>
+                <Name>321 - AIRBUS INDUSTRIE A321 JET</Name>
+              </Equipment>
+          <ClassOfService>
+              <Code>M</Code>
+            </ClassOfService>
+              <FlightDetail>
+                <FlightDuration>
+                  <Value>PT1H10M</Value>
+                </FlightDuration>
+              </FlightDetail>
+            </FlightSegment>
+            <FlightSegment SegmentKey="SEG28">
+              <Departure>
+                <AirportCode>FRA</AirportCode>
+                <Date>2016-05-30</Date>
+                <Time>07:30</Time>
+                <AirportName>Frankfurt International</AirportName>
+              </Departure>
+              <Arrival>
+                <AirportCode>BCN</AirportCode>
+                <Date>2016-05-30</Date>
+                <Time>09:30</Time>
+                <AirportName>Barcelona Airport</AirportName>
+              </Arrival>
+              <MarketingCarrier>
+                <AirlineID>C9</AirlineID>
+                <Name>Kronos Air</Name>
+                <FlightNumber>1124</FlightNumber>
+              </MarketingCarrier>
+              <OperatingCarrier>
+                <AirlineID>C9</AirlineID>
+                <Name>Kronos Air</Name>
+                <FlightNumber>1124</FlightNumber>
+              </OperatingCarrier>
+              <Equipment>
+                <AircraftCode>321</AircraftCode>
+                <Name>321 - AIRBUS INDUSTRIE A321 JET</Name>
+              </Equipment>
+          <ClassOfService>
+            <Code>M</Code>
+          </ClassOfService>
           <FlightDetail>
             <FlightDuration>
               <Value>PT2H0M</Value>

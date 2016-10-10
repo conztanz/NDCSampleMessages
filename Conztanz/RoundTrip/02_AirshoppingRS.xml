@@ -1,0 +1,861 @@
+<AirShoppingRS EchoToken="6296ae057130f4300daad56668c94c368bdb610a" TimeStamp="2016-10-06T17:11:27" Version="15.2" TransactionIdentifier="a" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../AirShoppingRS.xsd">
+    <Document>
+        <Name>CONZTANZ NDC GATEWAY</Name>
+        <ReferenceVersion>1.0</ReferenceVersion>
+    </Document>
+    <Success />
+    <AirShoppingProcessing />
+    <ShoppingResponseIDs>
+        <Owner>WF</Owner>
+        <ResponseID>REc37f5a43046259d8abee80cf6fa9428f8104d5f4</ResponseID>
+    </ShoppingResponseIDs>
+    <OffersGroup>
+        <AirlineOffers>
+            <TotalOfferQuantity>8</TotalOfferQuantity>
+            <Owner>WF</Owner>
+            <AirlineOffer>
+                <OfferID Owner="WF">111</OfferID>
+                <TimeLimits>
+                    <OfferExpiration Timestamp="2016-10-06T17:11:27" />
+                </TimeLimits>
+                <TotalPrice>
+                    <DetailCurrencyPrice>
+                        <Total Code="NOK">4099</Total>
+                        <Details>
+                            <Detail>
+                                <SubTotal Code="NOK">2623</SubTotal>
+                                <Application>Base Fare</Application>
+                            </Detail>
+                        </Details>
+                        <Taxes>
+                            <Total Code="NOK">1476</Total>
+                        </Taxes>
+                    </DetailCurrencyPrice>
+                </TotalPrice>
+                <PricedOffer>
+                    <OfferPrice OfferItemID="111-355-IST">
+                        <RequestedDate>
+                            <PriceDetail>
+                                <TotalAmount>
+                                    <SimpleCurrencyPrice Code="NOK">4099</SimpleCurrencyPrice>
+                                </TotalAmount>
+                                <BaseAmount Code="NOK">2623</BaseAmount>
+                                <Taxes>
+                                    <Total Code="NOK">1476</Total>
+                                </Taxes>
+                            </PriceDetail>
+                            <Associations>
+                                <AssociatedTraveler>
+                                    <TravelerReferences>SH1</TravelerReferences>
+                                </AssociatedTraveler>
+                            </Associations>
+                        </RequestedDate>
+                        <FareDetail>
+                            <FareComponent>
+                                <FareBasis>
+                                    <FareBasisCode>
+                                        <Code>ESR</Code>
+                                    </FareBasisCode>
+                                </FareBasis>
+                            </FareComponent>
+                        </FareDetail>
+                    </OfferPrice>
+                    <Associations>
+                        <ApplicableFlight>
+                            <OriginDestinationReferences>FL1 </OriginDestinationReferences>
+                            <FlightReferences>FL1 </FlightReferences>
+                            <FlightSegmentReference ref="SEG1">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                        </ApplicableFlight>
+                        <IncludedService>
+                            <ServiceReferences>SV2 SV4 SV6 </ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </PricedOffer>
+            </AirlineOffer>
+            <AirlineOffer>
+                <OfferID Owner="WF">112</OfferID>
+                <TimeLimits>
+                    <OfferExpiration Timestamp="2016-10-06T17:11:27" />
+                </TimeLimits>
+                <TotalPrice>
+                    <DetailCurrencyPrice>
+                        <Total Code="NOK">1698</Total>
+                        <Details>
+                            <Detail>
+                                <SubTotal Code="NOK">1087</SubTotal>
+                                <Application>Base Fare</Application>
+                            </Detail>
+                        </Details>
+                        <Taxes>
+                            <Total Code="NOK">611</Total>
+                        </Taxes>
+                    </DetailCurrencyPrice>
+                </TotalPrice>
+                <Penalty>
+                    <Details>
+                        <Detail>
+                            <Type>Changes/Cancellation/NoShow</Type>
+                            <Amounts>
+                                <Amount>
+                                    <CurrencyAmountValue>500</CurrencyAmountValue>
+                                    <ApplicableFeeRemarks>
+                                        <Remark>The penalty for changes or cancellations after the order is placed is 500 NOKEuros. Non refundable for no-show</Remark>
+                                    </ApplicableFeeRemarks>
+                                </Amount>
+                            </Amounts>
+                        </Detail>
+                    </Details>
+                </Penalty>
+                <PricedOffer>
+                    <OfferPrice OfferItemID="112-295-QJT">
+                        <RequestedDate>
+                            <PriceDetail>
+                                <TotalAmount>
+                                    <SimpleCurrencyPrice Code="NOK">1698</SimpleCurrencyPrice>
+                                </TotalAmount>
+                                <BaseAmount Code="NOK">1087</BaseAmount>
+                                <Taxes>
+                                    <Total Code="NOK">611</Total>
+                                </Taxes>
+                            </PriceDetail>
+                            <Associations>
+                                <AssociatedTraveler>
+                                    <TravelerReferences>SH1</TravelerReferences>
+                                </AssociatedTraveler>
+                            </Associations>
+                        </RequestedDate>
+                        <FareDetail>
+                            <FareComponent>
+                                <FareBasis>
+                                    <FareBasisCode>
+                                        <Code>ESR</Code>
+                                    </FareBasisCode>
+                                </FareBasis>
+                            </FareComponent>
+                        </FareDetail>
+                    </OfferPrice>
+                    <Associations>
+                        <ApplicableFlight>
+                            <OriginDestinationReferences>FL1 </OriginDestinationReferences>
+                            <FlightReferences>FL1 </FlightReferences>
+                            <FlightSegmentReference ref="SEG1">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                        </ApplicableFlight>
+                        <IncludedService>
+                            <ServiceReferences>SV1 SV5 </ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </PricedOffer>
+            </AirlineOffer>
+            <AirlineOffer>
+                <OfferID Owner="WF">113</OfferID>
+                <TimeLimits>
+                    <OfferExpiration Timestamp="2016-10-06T17:11:27" />
+                </TimeLimits>
+                <TotalPrice>
+                    <DetailCurrencyPrice>
+                        <Total Code="NOK">5698</Total>
+                        <Details>
+                            <Detail>
+                                <SubTotal Code="NOK">3647</SubTotal>
+                                <Application>Base Fare</Application>
+                            </Detail>
+                        </Details>
+                        <Taxes>
+                            <Total Code="NOK">2051</Total>
+                        </Taxes>
+                    </DetailCurrencyPrice>
+                </TotalPrice>
+                <PricedOffer>
+                    <OfferPrice OfferItemID="113-996-WWY">
+                        <RequestedDate>
+                            <PriceDetail>
+                                <TotalAmount>
+                                    <SimpleCurrencyPrice Code="NOK">5698</SimpleCurrencyPrice>
+                                </TotalAmount>
+                                <BaseAmount Code="NOK">3647</BaseAmount>
+                                <Taxes>
+                                    <Total Code="NOK">2051</Total>
+                                </Taxes>
+                            </PriceDetail>
+                            <Associations>
+                                <AssociatedTraveler>
+                                    <TravelerReferences>SH1</TravelerReferences>
+                                </AssociatedTraveler>
+                            </Associations>
+                        </RequestedDate>
+                        <FareDetail>
+                            <FareComponent>
+                                <FareBasis>
+                                    <FareBasisCode>
+                                        <Code>ESR</Code>
+                                    </FareBasisCode>
+                                </FareBasis>
+                            </FareComponent>
+                        </FareDetail>
+                    </OfferPrice>
+                    <Associations>
+                        <ApplicableFlight>
+                            <OriginDestinationReferences>FL3 </OriginDestinationReferences>
+                            <FlightReferences>FL3 </FlightReferences>
+                            <FlightSegmentReference ref="SEG4">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                            <FlightSegmentReference ref="SEG5">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                        </ApplicableFlight>
+                        <IncludedService>
+                            <ServiceReferences>SV2 SV3 </ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </PricedOffer>
+            </AirlineOffer>
+            <AirlineOffer>
+                <OfferID Owner="WF">114</OfferID>
+                <TimeLimits>
+                    <OfferExpiration Timestamp="2016-10-06T17:11:27" />
+                </TimeLimits>
+                <TotalPrice>
+                    <DetailCurrencyPrice>
+                        <Total Code="NOK">2643</Total>
+                        <Details>
+                            <Detail>
+                                <SubTotal Code="NOK">1692</SubTotal>
+                                <Application>Base Fare</Application>
+                            </Detail>
+                        </Details>
+                        <Taxes>
+                            <Total Code="NOK">951</Total>
+                        </Taxes>
+                    </DetailCurrencyPrice>
+                </TotalPrice>
+                <Penalty>
+                    <Details>
+                        <Detail>
+                            <Type>Changes/Cancellation/NoShow</Type>
+                            <Amounts>
+                                <Amount>
+                                    <CurrencyAmountValue>600</CurrencyAmountValue>
+                                    <ApplicableFeeRemarks>
+                                        <Remark>The penalty for changes or cancellations after the order is placed is 600 NOKEuros. Non refundable for no-show</Remark>
+                                    </ApplicableFeeRemarks>
+                                </Amount>
+                            </Amounts>
+                        </Detail>
+                    </Details>
+                </Penalty>
+                <PricedOffer>
+                    <OfferPrice OfferItemID="114-541-GQV">
+                        <RequestedDate>
+                            <PriceDetail>
+                                <TotalAmount>
+                                    <SimpleCurrencyPrice Code="NOK">2643</SimpleCurrencyPrice>
+                                </TotalAmount>
+                                <BaseAmount Code="NOK">1692</BaseAmount>
+                                <Taxes>
+                                    <Total Code="NOK">951</Total>
+                                </Taxes>
+                            </PriceDetail>
+                            <Associations>
+                                <AssociatedTraveler>
+                                    <TravelerReferences>SH1</TravelerReferences>
+                                </AssociatedTraveler>
+                            </Associations>
+                        </RequestedDate>
+                        <FareDetail>
+                            <FareComponent>
+                                <FareBasis>
+                                    <FareBasisCode>
+                                        <Code>ESR</Code>
+                                    </FareBasisCode>
+                                </FareBasis>
+                            </FareComponent>
+                        </FareDetail>
+                    </OfferPrice>
+                    <Associations>
+                        <ApplicableFlight>
+                            <OriginDestinationReferences>FL3 </OriginDestinationReferences>
+                            <FlightReferences>FL3 </FlightReferences>
+                            <FlightSegmentReference ref="SEG4">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                            <FlightSegmentReference ref="SEG5">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                        </ApplicableFlight>
+                        <IncludedService>
+                            <ServiceReferences>SV1 </ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </PricedOffer>
+            </AirlineOffer>
+            <AirlineOffer>
+                <OfferID Owner="WF">211</OfferID>
+                <TimeLimits>
+                    <OfferExpiration Timestamp="2016-10-06T17:11:27" />
+                </TimeLimits>
+                <TotalPrice>
+                    <DetailCurrencyPrice>
+                        <Total Code="NOK">4099</Total>
+                        <Details>
+                            <Detail>
+                                <SubTotal Code="NOK">2623</SubTotal>
+                                <Application>Base Fare</Application>
+                            </Detail>
+                        </Details>
+                        <Taxes>
+                            <Total Code="NOK">1476</Total>
+                        </Taxes>
+                    </DetailCurrencyPrice>
+                </TotalPrice>
+                <PricedOffer>
+                    <OfferPrice OfferItemID="211-742-MSP">
+                        <RequestedDate>
+                            <PriceDetail>
+                                <TotalAmount>
+                                    <SimpleCurrencyPrice Code="NOK">4099</SimpleCurrencyPrice>
+                                </TotalAmount>
+                                <BaseAmount Code="NOK">2623</BaseAmount>
+                                <Taxes>
+                                    <Total Code="NOK">1476</Total>
+                                </Taxes>
+                            </PriceDetail>
+                            <Associations>
+                                <AssociatedTraveler>
+                                    <TravelerReferences>SH1</TravelerReferences>
+                                </AssociatedTraveler>
+                            </Associations>
+                        </RequestedDate>
+                        <FareDetail>
+                            <FareComponent>
+                                <FareBasis>
+                                    <FareBasisCode>
+                                        <Code>ESR</Code>
+                                    </FareBasisCode>
+                                </FareBasis>
+                            </FareComponent>
+                        </FareDetail>
+                    </OfferPrice>
+                    <Associations>
+                        <ApplicableFlight>
+                            <OriginDestinationReferences>FL2 </OriginDestinationReferences>
+                            <FlightReferences>FL2 </FlightReferences>
+                            <FlightSegmentReference ref="SEG2">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                        </ApplicableFlight>
+                        <IncludedService>
+                            <ServiceReferences>SV2 SV4 SV6 </ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </PricedOffer>
+            </AirlineOffer>
+            <AirlineOffer>
+                <OfferID Owner="WF">212</OfferID>
+                <TimeLimits>
+                    <OfferExpiration Timestamp="2016-10-06T17:11:27" />
+                </TimeLimits>
+                <TotalPrice>
+                    <DetailCurrencyPrice>
+                        <Total Code="NOK">1698</Total>
+                        <Details>
+                            <Detail>
+                                <SubTotal Code="NOK">1087</SubTotal>
+                                <Application>Base Fare</Application>
+                            </Detail>
+                        </Details>
+                        <Taxes>
+                            <Total Code="NOK">611</Total>
+                        </Taxes>
+                    </DetailCurrencyPrice>
+                </TotalPrice>
+                <Penalty>
+                    <Details>
+                        <Detail>
+                            <Type>Changes/Cancellation/NoShow</Type>
+                            <Amounts>
+                                <Amount>
+                                    <CurrencyAmountValue>500</CurrencyAmountValue>
+                                    <ApplicableFeeRemarks>
+                                        <Remark>The penalty for changes or cancellations after the order is placed is 500 NOKEuros. Non refundable for no-show</Remark>
+                                    </ApplicableFeeRemarks>
+                                </Amount>
+                            </Amounts>
+                        </Detail>
+                    </Details>
+                </Penalty>
+                <PricedOffer>
+                    <OfferPrice OfferItemID="212-066-NOX">
+                        <RequestedDate>
+                            <PriceDetail>
+                                <TotalAmount>
+                                    <SimpleCurrencyPrice Code="NOK">1698</SimpleCurrencyPrice>
+                                </TotalAmount>
+                                <BaseAmount Code="NOK">1087</BaseAmount>
+                                <Taxes>
+                                    <Total Code="NOK">611</Total>
+                                </Taxes>
+                            </PriceDetail>
+                            <Associations>
+                                <AssociatedTraveler>
+                                    <TravelerReferences>SH1</TravelerReferences>
+                                </AssociatedTraveler>
+                            </Associations>
+                        </RequestedDate>
+                        <FareDetail>
+                            <FareComponent>
+                                <FareBasis>
+                                    <FareBasisCode>
+                                        <Code>ESR</Code>
+                                    </FareBasisCode>
+                                </FareBasis>
+                            </FareComponent>
+                        </FareDetail>
+                    </OfferPrice>
+                    <Associations>
+                        <ApplicableFlight>
+                            <OriginDestinationReferences>FL2 </OriginDestinationReferences>
+                            <FlightReferences>FL2 </FlightReferences>
+                            <FlightSegmentReference ref="SEG2">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                        </ApplicableFlight>
+                        <IncludedService>
+                            <ServiceReferences>SV1 SV5 </ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </PricedOffer>
+            </AirlineOffer>
+            <AirlineOffer>
+                <OfferID Owner="WF">213</OfferID>
+                <TimeLimits>
+                    <OfferExpiration Timestamp="2016-10-06T17:11:27" />
+                </TimeLimits>
+                <TotalPrice>
+                    <DetailCurrencyPrice>
+                        <Total Code="NOK">6798</Total>
+                        <Details>
+                            <Detail>
+                                <SubTotal Code="NOK">4351</SubTotal>
+                                <Application>Base Fare</Application>
+                            </Detail>
+                        </Details>
+                        <Taxes>
+                            <Total Code="NOK">2447</Total>
+                        </Taxes>
+                    </DetailCurrencyPrice>
+                </TotalPrice>
+                <PricedOffer>
+                    <OfferPrice OfferItemID="213-396-GPS">
+                        <RequestedDate>
+                            <PriceDetail>
+                                <TotalAmount>
+                                    <SimpleCurrencyPrice Code="NOK">6798</SimpleCurrencyPrice>
+                                </TotalAmount>
+                                <BaseAmount Code="NOK">4351</BaseAmount>
+                                <Taxes>
+                                    <Total Code="NOK">2447</Total>
+                                </Taxes>
+                            </PriceDetail>
+                            <Associations>
+                                <AssociatedTraveler>
+                                    <TravelerReferences>SH1</TravelerReferences>
+                                </AssociatedTraveler>
+                            </Associations>
+                        </RequestedDate>
+                        <FareDetail>
+                            <FareComponent>
+                                <FareBasis>
+                                    <FareBasisCode>
+                                        <Code>ESR</Code>
+                                    </FareBasisCode>
+                                </FareBasis>
+                            </FareComponent>
+                        </FareDetail>
+                    </OfferPrice>
+                    <Associations>
+                        <ApplicableFlight>
+                            <OriginDestinationReferences>FL4 </OriginDestinationReferences>
+                            <FlightReferences>FL4 </FlightReferences>
+                            <FlightSegmentReference ref="SEG3">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                            <FlightSegmentReference ref="SEG6">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                        </ApplicableFlight>
+                        <IncludedService>
+                            <ServiceReferences>SV2 SV4 SV3 </ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </PricedOffer>
+            </AirlineOffer>
+            <AirlineOffer>
+                <OfferID Owner="WF">214</OfferID>
+                <TimeLimits>
+                    <OfferExpiration Timestamp="2016-10-06T17:11:27" />
+                </TimeLimits>
+                <TotalPrice>
+                    <DetailCurrencyPrice>
+                        <Total Code="NOK">2948</Total>
+                        <Details>
+                            <Detail>
+                                <SubTotal Code="NOK">1887</SubTotal>
+                                <Application>Base Fare</Application>
+                            </Detail>
+                        </Details>
+                        <Taxes>
+                            <Total Code="NOK">1061</Total>
+                        </Taxes>
+                    </DetailCurrencyPrice>
+                </TotalPrice>
+                <Penalty>
+                    <Details>
+                        <Detail>
+                            <Type>Changes/Cancellation/NoShow</Type>
+                            <Amounts>
+                                <Amount>
+                                    <CurrencyAmountValue>600</CurrencyAmountValue>
+                                    <ApplicableFeeRemarks>
+                                        <Remark>The penalty for changes or cancellations after the order is placed is 600 NOKEuros. Non refundable for no-show</Remark>
+                                    </ApplicableFeeRemarks>
+                                </Amount>
+                            </Amounts>
+                        </Detail>
+                    </Details>
+                </Penalty>
+                <PricedOffer>
+                    <OfferPrice OfferItemID="214-788-YAS">
+                        <RequestedDate>
+                            <PriceDetail>
+                                <TotalAmount>
+                                    <SimpleCurrencyPrice Code="NOK">2948</SimpleCurrencyPrice>
+                                </TotalAmount>
+                                <BaseAmount Code="NOK">1887</BaseAmount>
+                                <Taxes>
+                                    <Total Code="NOK">1061</Total>
+                                </Taxes>
+                            </PriceDetail>
+                            <Associations>
+                                <AssociatedTraveler>
+                                    <TravelerReferences>SH1</TravelerReferences>
+                                </AssociatedTraveler>
+                            </Associations>
+                        </RequestedDate>
+                        <FareDetail>
+                            <FareComponent>
+                                <FareBasis>
+                                    <FareBasisCode>
+                                        <Code>ESR</Code>
+                                    </FareBasisCode>
+                                </FareBasis>
+                            </FareComponent>
+                        </FareDetail>
+                    </OfferPrice>
+                    <Associations>
+                        <ApplicableFlight>
+                            <OriginDestinationReferences>FL4 </OriginDestinationReferences>
+                            <FlightReferences>FL4 </FlightReferences>
+                            <FlightSegmentReference ref="SEG3">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                            <FlightSegmentReference ref="SEG6">
+                                <Cabin>
+                                    <CabinDesignator>M</CabinDesignator>
+                                </Cabin>
+                            </FlightSegmentReference>
+                        </ApplicableFlight>
+                        <IncludedService>
+                            <ServiceReferences>SV1 SV5 </ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </PricedOffer>
+            </AirlineOffer>
+        </AirlineOffers>
+    </OffersGroup>
+    <DataLists>
+        <AnonymousTravelerList>
+            <AnonymousTraveler ObjectKey="SH1">
+                <PTC Quantity="2">ADT</PTC>
+            </AnonymousTraveler>
+        </AnonymousTravelerList>
+        <FlightSegmentList>
+            <FlightSegment SegmentKey="SEG1">
+                <Departure>
+                    <AirportCode>BGO</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Bergen Airport</AirportName>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BOO</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Bodo Airport</AirportName>
+                </Arrival>
+                <MarketingCarrier>
+                    <AirlineID>WF</AirlineID>
+                    <Name>Wideroe</Name>
+                    <FlightNumber>9363</FlightNumber>
+                </MarketingCarrier>
+                <OperatingCarrier>
+                    <AirlineID>WF</AirlineID>
+                    <Name>Wideroe</Name>
+                    <FlightNumber>9363</FlightNumber>
+                </OperatingCarrier>
+                <Equipment>
+                    <AircraftCode>DH8</AircraftCode>
+                    <Name>DHC-8 400</Name>
+                </Equipment>
+                <FlightDetail>
+                    <FlightDuration>
+                        <Value>PT0H00M</Value>
+                    </FlightDuration>
+                </FlightDetail>
+            </FlightSegment>
+            <FlightSegment SegmentKey="SEG2">
+                <Departure>
+                    <AirportCode>BOO</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Bodo Airport</AirportName>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BGO</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Bergen Airport</AirportName>
+                </Arrival>
+                <MarketingCarrier>
+                    <AirlineID>WF</AirlineID>
+                    <Name>Wideroe</Name>
+                    <FlightNumber>6243</FlightNumber>
+                </MarketingCarrier>
+                <OperatingCarrier>
+                    <AirlineID>WF</AirlineID>
+                    <Name>Wideroe</Name>
+                    <FlightNumber>6243</FlightNumber>
+                </OperatingCarrier>
+                <Equipment>
+                    <AircraftCode>DH8</AircraftCode>
+                    <Name>DHC-8 400</Name>
+                </Equipment>
+                <FlightDetail>
+                    <FlightDuration>
+                        <Value>PT0H00M</Value>
+                    </FlightDuration>
+                </FlightDetail>
+            </FlightSegment>
+            <FlightSegment SegmentKey="SEG3">
+                <Departure>
+                    <AirportCode>TOS</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Tromso Airport</AirportName>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BGO</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Bergen Airport</AirportName>
+                </Arrival>
+                <MarketingCarrier>
+                    <AirlineID>WF</AirlineID>
+                    <Name>Wideroe</Name>
+                    <FlightNumber>814</FlightNumber>
+                </MarketingCarrier>
+                <OperatingCarrier>
+                    <AirlineID>WF</AirlineID>
+                    <Name>Wideroe</Name>
+                    <FlightNumber>814</FlightNumber>
+                </OperatingCarrier>
+                <Equipment>
+                    <AircraftCode>DH8</AircraftCode>
+                    <Name>DHC-8 400</Name>
+                </Equipment>
+                <FlightDetail>
+                    <FlightDuration>
+                        <Value>PT0H00M</Value>
+                    </FlightDuration>
+                </FlightDetail>
+            </FlightSegment>
+            <FlightSegment SegmentKey="SEG4">
+                <Departure>
+                    <AirportCode>BGO</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Bergen Airport</AirportName>
+                </Departure>
+                <Arrival>
+                    <AirportCode>OSL</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Oslo Airport</AirportName>
+                </Arrival>
+                <MarketingCarrier>
+                    <AirlineID>SK</AirlineID>
+                    <Name>Scandinavian Airline</Name>
+                    <FlightNumber>2658</FlightNumber>
+                </MarketingCarrier>
+                <OperatingCarrier>
+                    <AirlineID>SK</AirlineID>
+                    <Name>Scandinavian Airline</Name>
+                    <FlightNumber>2658</FlightNumber>
+                </OperatingCarrier>
+                <Equipment>
+                    <AircraftCode>737</AircraftCode>
+                    <Name>Boeing 737-700</Name>
+                </Equipment>
+                <FlightDetail>
+                    <FlightDuration>
+                        <Value>PT0H00M</Value>
+                    </FlightDuration>
+                </FlightDetail>
+            </FlightSegment>
+            <FlightSegment SegmentKey="SEG5">
+                <Departure>
+                    <AirportCode>OSL</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Oslo Airport</AirportName>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BOO</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Bodo Airport</AirportName>
+                </Arrival>
+                <MarketingCarrier>
+                    <AirlineID>SK</AirlineID>
+                    <Name>Scandinavian Airline</Name>
+                    <FlightNumber>9787</FlightNumber>
+                </MarketingCarrier>
+                <OperatingCarrier>
+                    <AirlineID>SK</AirlineID>
+                    <Name>Scandinavian Airline</Name>
+                    <FlightNumber>9787</FlightNumber>
+                </OperatingCarrier>
+                <Equipment>
+                    <AircraftCode>737</AircraftCode>
+                    <Name>Boeing 737-700</Name>
+                </Equipment>
+                <FlightDetail>
+                    <FlightDuration>
+                        <Value>PT0H00M</Value>
+                    </FlightDuration>
+                </FlightDetail>
+            </FlightSegment>
+            <FlightSegment SegmentKey="SEG6">
+                <Departure>
+                    <AirportCode>BOO</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Bodo Airport</AirportName>
+                </Departure>
+                <Arrival>
+                    <AirportCode>TOS</AirportCode>
+                    <Date>2016-10-06</Date>
+                    <Time>17:11</Time>
+                    <AirportName>Tromso Airport</AirportName>
+                </Arrival>
+                <MarketingCarrier>
+                    <AirlineID>SK</AirlineID>
+                    <Name>Scandinavian Airline</Name>
+                    <FlightNumber>962</FlightNumber>
+                </MarketingCarrier>
+                <OperatingCarrier>
+                    <AirlineID>SK</AirlineID>
+                    <Name>Scandinavian Airline</Name>
+                    <FlightNumber>962</FlightNumber>
+                </OperatingCarrier>
+                <Equipment>
+                    <AircraftCode>737</AircraftCode>
+                    <Name>Boeing 737-700</Name>
+                </Equipment>
+                <FlightDetail>
+                    <FlightDuration>
+                        <Value>PT0H00M</Value>
+                    </FlightDuration>
+                </FlightDetail>
+            </FlightSegment>
+        </FlightSegmentList>
+        <FlightList>
+            <Flight FlightKey="FL1">
+                <Journey>
+                    <Time>PT0H00M</Time>
+                </Journey>
+                <SegmentReferences>SEG1 </SegmentReferences>
+            </Flight>
+            <Flight FlightKey="FL2">
+                <Journey>
+                    <Time>PT0H00M</Time>
+                </Journey>
+                <SegmentReferences>SEG2 </SegmentReferences>
+            </Flight>
+            <Flight FlightKey="FL3">
+                <Journey>
+                    <Time>PT0H00M</Time>
+                </Journey>
+                <SegmentReferences>SEG4 SEG5 </SegmentReferences>
+            </Flight>
+            <Flight FlightKey="FL4">
+                <Journey>
+                    <Time>PT0H00M</Time>
+                </Journey>
+                <SegmentReferences>SEG6 SEG3 </SegmentReferences>
+            </Flight>
+        </FlightList>
+        <OriginDestinationList>
+            <OriginDestination OriginDestinationKey="OD1">
+                <DepartureCode>BGO</DepartureCode>
+                <ArrivalCode>BOO</ArrivalCode>
+                <FlightReferences>FL1 FL3 </FlightReferences>
+            </OriginDestination>
+            <OriginDestination OriginDestinationKey="OD2">
+                <DepartureCode>BOO</DepartureCode>
+                <ArrivalCode>BGO</ArrivalCode>
+                <FlightReferences>FL2 FL4 </FlightReferences>
+            </OriginDestination>
+        </OriginDestinationList>
+        <ServiceList>
+      
+    </ServiceList>
+    </DataLists>
+    <Metadata>
+        <Other>
+            <OtherMetadata>
+                <CurrencyMetadatas>
+                    <CurrencyMetadata MetadataKey="NOK">
+                        <Decimals>2</Decimals>
+                    </CurrencyMetadata>
+                </CurrencyMetadatas>
+            </OtherMetadata>
+        </Other>
+    </Metadata>
+</AirShoppingRS>

@@ -14197,6 +14197,7 @@
       </Seats>
     </SeatList>
   </DataLists>
+  <!--
   <Metadata>
     <Other>
       <OtherMetadata>
@@ -14219,4 +14220,5 @@
       </OtherMetadata>
     </Other>
   </Metadata>
+  -->
 </SeatAvailabilityRS>
