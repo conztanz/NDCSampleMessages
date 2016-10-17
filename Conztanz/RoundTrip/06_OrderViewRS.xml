@@ -1,0 +1,214 @@
+<OrderViewRS TimeStamp="2016-10-17T12:16:00" Version="15.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderViewRS.xsd">
+    <Document>
+        <Name>WF</Name>
+        <ReferenceVersion>1.0</ReferenceVersion>
+    </Document>
+    <Party>
+        <Sender>
+            <TravelAgencySender>
+                <Contacts>
+                    <Contact>
+                        <EmailContact>
+                            <Address>ndc@usdtravel.com</Address>
+                        </EmailContact>
+                    </Contact>
+                </Contacts>
+                <PseudoCity>A4A</PseudoCity>
+                <IATA_Number>98417900</IATA_Number>
+                <AgencyID Owner="WF">WF</AgencyID>
+                <AgentUser>
+                    <Name>ksmith</Name>
+                    <AgentUserID>ramesh@jrt.com</AgentUserID>
+                    <UserRole>ADMIN</UserRole>
+                </AgentUser>
+            </TravelAgencySender>
+        </Sender>
+        <Participants xsi:nil="true" />
+        <Recipient xsi:nil="true" />
+    </Party>
+    <Success />
+    <Response>
+        <OrderViewProcessing />
+        <Passengers>
+      
+    </Passengers>
+        <Order>
+            <OrderID Owner="WF">ZITBH0</OrderID>
+            <BookingReferences>
+                <BookingReference>
+                    <ID>CYGQJG</ID>
+                    <AirlineID>WF</AirlineID>
+                </BookingReference>
+            </BookingReferences>
+            <TotalOrderPrice>
+                <DetailCurrencyPrice>
+                    <Total Code="NOK">65450</Total>
+                    <Taxes>
+                        <Total>25272</Total>
+                    </Taxes>
+                </DetailCurrencyPrice>
+            </TotalOrderPrice>
+            <OrderItems>
+                <OrderItem>
+                    <OrderItemID Owner="WF">1#M#597251152#537651182</OrderItemID>
+                    <FlightItem>
+                        <OriginDestination>
+                            <Flight refs="SEG5">
+                                <Departure>
+                                    <AirportCode>FRA</AirportCode>
+                                    <Date>2016-05-26</Date>
+                                </Departure>
+                                <Arrival>
+                                    <AirportCode>CDG</AirportCode>
+                                </Arrival>
+                                <MarketingCarrier>
+                                    <AirlineID>WF</AirlineID>
+                                    <Name>Kronos Air</Name>
+                                    <FlightNumber>1030</FlightNumber>
+                                </MarketingCarrier>
+                                <OperatingCarrier>
+                                    <AirlineID>WF</AirlineID>
+                                </OperatingCarrier>
+                            </Flight>
+                            <Flight refs="SEG6">
+                                <Departure>
+                                    <AirportCode>CDG</AirportCode>
+                                    <Date>2016-05-26</Date>
+                                </Departure>
+                                <Arrival>
+                                    <AirportCode>TXL</AirportCode>
+                                </Arrival>
+                                <MarketingCarrier>
+                                    <AirlineID>WF</AirlineID>
+                                    <Name>Kronos Air</Name>
+                                    <FlightNumber>1030</FlightNumber>
+                                </MarketingCarrier>
+                                <OperatingCarrier>
+                                    <AirlineID>WF</AirlineID>
+                                </OperatingCarrier>
+                            </Flight>
+                        </OriginDestination>
+                    </FlightItem>
+                    <Associations>
+                        <Passengers>
+                            <PassengerReferences>PAX1 </PassengerReferences>
+                        </Passengers>
+                    </Associations>
+                </OrderItem>
+            </OrderItems>
+        </Order>
+        <DataList>
+            <FlightSegmentList>
+                <FlightSegment SegmentKey="SEG5">
+                    <Departure>
+                        <AirportCode>FRA</AirportCode>
+                        <Date>2016-05-26</Date>
+                        <Time>09:35</Time>
+                        <AirportName>Frankfurt International</AirportName>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>CDG</AirportCode>
+                        <Date>2016-05-26</Date>
+                        <Time>10:45</Time>
+                        <AirportName>Charles de Gaulle</AirportName>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>WF</AirlineID>
+                        <Name>Kronos Air</Name>
+                        <FlightNumber>1030</FlightNumber>
+                    </MarketingCarrier>
+                    <OperatingCarrier>
+                        <AirlineID>WF</AirlineID>
+                        <Name>Kronos Air</Name>
+                        <FlightNumber>1030</FlightNumber>
+                    </OperatingCarrier>
+                    <Equipment>
+                        <AircraftCode>320</AircraftCode>
+                        <Name>320 - AIRBUS INDUSTRIE A320-100/200 JET</Name>
+                    </Equipment>
+                    <ClassOfService>
+                        <Code>M</Code>
+                    </ClassOfService>
+                    <FlightDetail>
+                        <FlightDuration>
+                            <Value>PT1H70M</Value>
+                        </FlightDuration>
+                    </FlightDetail>
+                </FlightSegment>
+                <FlightSegment SegmentKey="SEG6">
+                    <Departure>
+                        <AirportCode>CDG</AirportCode>
+                        <Date>2016-05-26</Date>
+                        <Time>14:45</Time>
+                        <AirportName>Charles de Gaulle</AirportName>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>TXL</AirportCode>
+                        <Date>2016-05-26</Date>
+                        <Time>16:25</Time>
+                        <AirportName>Berlin Tegel Airport</AirportName>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>WF</AirlineID>
+                        <Name>Kronos Air</Name>
+                        <FlightNumber>1030</FlightNumber>
+                    </MarketingCarrier>
+                    <OperatingCarrier>
+                        <AirlineID>WF</AirlineID>
+                        <Name>Kronos Air</Name>
+                        <FlightNumber>1030</FlightNumber>
+                    </OperatingCarrier>
+                    <Equipment>
+                        <AircraftCode>320</AircraftCode>
+                        <Name>320 - AIRBUS INDUSTRIE A320-100/200 JET</Name>
+                    </Equipment>
+                    <ClassOfService>
+                        <Code>M</Code>
+                    </ClassOfService>
+                    <FlightDetail>
+                        <FlightDuration>
+                            <Value>PT1H100M</Value>
+                        </FlightDuration>
+                    </FlightDetail>
+                </FlightSegment>
+            </FlightSegmentList>
+            <FlightList>
+                <Flight FlightKey="FL3">
+                    <Journey>
+                        <Time>PT1H70M</Time>
+                    </Journey>
+                    <SegmentReferences>SEG5 SEG6 </SegmentReferences>
+                </Flight>
+            </FlightList>
+            <OriginDestinationList>
+                <OriginDestination OriginDestinationKey="OD1">
+                    <DepartureCode>FRA</DepartureCode>
+                    <ArrivalCode>TXL</ArrivalCode>
+                    <FlightReferences>FL3 </FlightReferences>
+                </OriginDestination>
+            </OriginDestinationList>
+        </DataList>
+        <Metadata>
+            <Other>
+                <OtherMetadata>
+                    <CurrencyMetadatas>
+                        <CurrencyMetadata MetadataKey="NOK">
+                            <Decimals>2</Decimals>
+                        </CurrencyMetadata>
+                    </CurrencyMetadatas>
+                </OtherMetadata>
+                <OtherMetadata>
+                    <DescriptionMetadatas>
+                        <DescriptionMetadata MetadataKey="ID1">
+                            <AugmentationPoint>
+                                <AugPoint>
+                                    <a:Logo xmlns:a="http://www.iata.org">http://uat.jrtechnologies.in/ServiceImage/kronos-50x90.png</a:Logo>
+                                </AugPoint>
+                            </AugmentationPoint>
+                        </DescriptionMetadata>
+                    </DescriptionMetadatas>
+                </OtherMetadata>
+            </Other>
+        </Metadata>
+    </Response>
+</OrderViewRS>

@@ -65,11 +65,11 @@
 		<OriginDestinations>
 			<OriginDestination>
 				<Departure>
-					<AirportCode>OSL</AirportCode>
+					<AirportCode>BOO</AirportCode>
 					<Date>2016-11-05</Date>
 				</Departure>
 				<Arrival>
-					<AirportCode>BGO</AirportCode>
+					<AirportCode>BDO</AirportCode>
 				</Arrival>
 				<MarketingCarrierAirline>
 					<AirlineID>WF</AirlineID>
@@ -79,11 +79,11 @@
 			</OriginDestination>
 			<OriginDestination>
 				<Departure>
-					<AirportCode>BGO</AirportCode>
+					<AirportCode>BDO</AirportCode>
 					<Date>2016-11-07</Date>
 				</Departure>
 				<Arrival>
-					<AirportCode>OSL</AirportCode>
+					<AirportCode>BOO</AirportCode>
 				</Arrival>
 				<MarketingCarrierAirline>
 					<AirlineID>WF</AirlineID>
