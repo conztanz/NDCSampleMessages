@@ -5,23 +5,23 @@
     </Document>
     <Party>
         <Sender>
-            <TravelAgencySender>
-                <Contacts>
-                    <Contact>
-                        <EmailContact>
-                            <Address>ndc@usdtravel.com</Address>
-                        </EmailContact>
-                    </Contact>
-                </Contacts>
-                <PseudoCity>A4A</PseudoCity>
-                <IATA_Number>98417900</IATA_Number>
-                <AgencyID Owner="WF">WF</AgencyID>
-                <AgentUser>
-                    <Name>ksmith</Name>
-                    <AgentUserID>ramesh@jrt.com</AgentUserID>
-                    <UserRole>ADMIN</UserRole>
-                </AgentUser>
-            </TravelAgencySender>
+        <TravelAgencySender>
+            <Contacts>
+            <Contact>
+                <EmailContact>
+                <Address>web@wideröe.no</Address>
+                </EmailContact>
+            </Contact>
+            </Contacts>
+            <PseudoCity>A4A</PseudoCity>
+            <IATA_Number>98417900</IATA_Number>
+            <AgencyID Owner="C9">C9</AgencyID>
+            <AgentUser>
+            <Name>Direct Sales Website</Name>
+            <AgentUserID>direct_sales_website</AgentUserID>
+            <UserRole>Admin</UserRole>
+            </AgentUser>
+        </TravelAgencySender>
         </Sender>
         <Participants xsi:nil="true" />
         <Recipient xsi:nil="true" />

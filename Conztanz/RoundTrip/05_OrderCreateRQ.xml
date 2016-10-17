@@ -2,28 +2,28 @@
 <OrderCreateRQ xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="15.2" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderCreateRQ.xsd">
   <PointOfSale>
     <Location>
-      <CountryCode>US</CountryCode>
-      <CityCode>WAS</CityCode>
+      <CountryCode>NO</CountryCode>
+      <CityCode>OSL</CityCode>
     </Location>
-    <RequestTime Zone="EST">2015-10-14T07:45:00+07:45</RequestTime>
+    <RequestTime Zone="EST">2016-10-12T07:38:00</RequestTime>
     <TouchPoint>
       <Device>
         <Code>2</Code>
         <Definition>Web Browser</Definition>
         <Position>
-          <Latitude>38.89756</Latitude>
-          <Longitude>-77.03650</Longitude>
-          <NAC>8KD7V PGGM0</NAC>
+          <Latitude>60.20166586</Latitude>
+          <Longitude>11.083666332</Longitude>
+          <NAC>HWQHP T0ZM6</NAC>
         </Position>
       </Device>
       <Event>
-        <Code>1</Code>
-        <Definition>Order or buy</Definition>
+        <Code>9</Code>
+        <Definition>Shop</Definition>
       </Event>
     </TouchPoint>
   </PointOfSale>
   <Document>
-    <Name>KRONOS NDC GATEWAY</Name>
+    <Name>CONZTANZ NDC GATEWAY</Name>
     <ReferenceVersion>1.0</ReferenceVersion>
   </Document>
   <Party>
@@ -32,7 +32,7 @@
         <Contacts>
           <Contact>
             <EmailContact>
-              <Address>ndc@usdtravel.com</Address>
+              <Address>web@wideröe.no</Address>
             </EmailContact>
           </Contact>
         </Contacts>
@@ -40,9 +40,9 @@
         <IATA_Number>98417900</IATA_Number>
         <AgencyID Owner="C9">C9</AgencyID>
         <AgentUser>
-          <Name>ksmith</Name>
-          <AgentUserID>ramesh@jrt.com</AgentUserID>
-          <UserRole>ADMIN</UserRole>
+          <Name>Direct Sales Website</Name>
+          <AgentUserID>direct_sales_website</AgentUserID>
+          <UserRole>Admin</UserRole>
         </AgentUser>
       </TravelAgencySender>
     </Sender>
@@ -138,100 +138,4 @@
         </Payment>
       </Payments>
   </Query>
-  <DataLists>
-    <FlightSegmentList>
-      <FlightSegment SegmentKey="SEG5">
-          <Departure>
-            <AirportCode>FRA</AirportCode>
-            <Date>2016-05-26</Date>
-            <Time>09:35</Time>
-            <AirportName>Frankfurt International</AirportName>
-          </Departure>
-          <Arrival>
-            <AirportCode>CDG</AirportCode>
-            <Date>2016-05-26</Date>
-            <Time>10:45</Time>
-            <AirportName>Charles de Gaulle</AirportName>
-          </Arrival>
-          <MarketingCarrier>
-            <AirlineID>C9</AirlineID>
-            <Name>Kronos Air</Name>
-            <FlightNumber>1030</FlightNumber>
-          </MarketingCarrier>
-          <OperatingCarrier>
-            <AirlineID>C9</AirlineID>
-            <Name>Kronos Air</Name>
-            <FlightNumber>1030</FlightNumber>
-          </OperatingCarrier>
-          <Equipment>
-            <AircraftCode>320</AircraftCode>
-            <Name>320 - AIRBUS INDUSTRIE A320-100/200 JET</Name>
-          </Equipment>
-          <FlightDetail>
-            <FlightDuration>
-              <Value>PT1H10M</Value>
-            </FlightDuration>
-          </FlightDetail>
-      </FlightSegment>
-      <FlightSegment SegmentKey="SEG6">
-        <Departure>
-          <AirportCode>CDG</AirportCode>
-          <Date>2016-05-26</Date>
-          <Time>14:45</Time>
-          <AirportName>Charles de Gaulle</AirportName>
-        </Departure>
-        <Arrival>
-          <AirportCode>TXL</AirportCode>
-          <Date>2016-05-26</Date>
-          <Time>16:25</Time>
-          <AirportName>Berlin Tegel Airport</AirportName>
-        </Arrival>
-        <MarketingCarrier>
-          <AirlineID>C9</AirlineID>
-          <Name>Kronos Air</Name>
-          <FlightNumber>1030</FlightNumber>
-        </MarketingCarrier>
-        <OperatingCarrier>
-          <AirlineID>C9</AirlineID>
-          <Name>Kronos Air</Name>
-          <FlightNumber>1030</FlightNumber>
-        </OperatingCarrier>
-        <Equipment>
-          <AircraftCode>320</AircraftCode>
-          <Name>320 - AIRBUS INDUSTRIE A320-100/200 JET</Name>
-        </Equipment>
-        <FlightDetail>
-          <FlightDuration>
-            <Value>PT1H40M</Value>
-          </FlightDuration>
-        </FlightDetail>
-      </FlightSegment>
-    </FlightSegmentList>
-    <FlightList>
-      <Flight FlightKey="FL3">
-        <Journey>
-          <Time>PT6H50M</Time>
-        </Journey>
-        <SegmentReferences>SEG5 SEG6</SegmentReferences>
-      </Flight>
-    </FlightList>
-    <OriginDestinationList>
-      <OriginDestination OriginDestinationKey="OD1">
-        <DepartureCode>FRA</DepartureCode>
-        <ArrivalCode>TXL</ArrivalCode>
-        <FlightReferences>FL3</FlightReferences>
-      </OriginDestination>
-    </OriginDestinationList>
-  </DataLists>
-  <Metadata>
-    <Other>
-      <OtherMetadata>
-        <CurrencyMetadatas>
-          <CurrencyMetadata MetadataKey="EUR">
-            <Decimals>2</Decimals>
-          </CurrencyMetadata>
-        </CurrencyMetadatas>
-      </OtherMetadata>
-    </Other>
-  </Metadata>
 </OrderCreateRQ>
