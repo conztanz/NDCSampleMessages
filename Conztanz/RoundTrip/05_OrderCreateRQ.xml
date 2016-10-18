@@ -17,8 +17,8 @@
         </Position>
       </Device>
       <Event>
-        <Code>9</Code>
-        <Definition>Shop</Definition>
+        <Code>11</Code>
+        <Definition>Order create</Definition>
       </Event>
     </TouchPoint>
   </PointOfSale>

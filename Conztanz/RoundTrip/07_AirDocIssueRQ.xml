@@ -2,23 +2,23 @@
 <AirDocIssueRQ xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="15.2" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../AirDocIssueRQ.xsd">
   <PointOfSale>
     <Location>
-      <CountryCode>US</CountryCode>
-      <CityCode>WAS</CityCode>
+      <CountryCode>NO</CountryCode>
+      <CityCode>OSL</CityCode>
     </Location>
-    <RequestTime Zone="EST">2015-10-14T07:45:00+07:45</RequestTime>
+    <RequestTime Zone="EST">2016-10-12T07:38:00</RequestTime>
     <TouchPoint>
       <Device>
         <Code>2</Code>
         <Definition>Web Browser</Definition>
         <Position>
-          <Latitude>38.89756</Latitude>
-          <Longitude>-77.03650</Longitude>
-          <NAC>8KD7V PGGM0</NAC>
+          <Latitude>60.20166586</Latitude>
+          <Longitude>11.083666332</Longitude>
+          <NAC>HWQHP T0ZM6</NAC>
         </Position>
       </Device>
       <Event>
-        <Code>1</Code>
-        <Definition>Order or buy</Definition>
+        <Code>12</Code>
+        <Definition>Air document issuance</Definition>
       </Event>
     </TouchPoint>
   </PointOfSale>
@@ -32,7 +32,7 @@
         <Contacts>
           <Contact>
             <EmailContact>
-              <Address>ndc@usdtravel.com</Address>
+              <Address>web@wideröe.no</Address>
             </EmailContact>
           </Contact>
         </Contacts>
@@ -40,9 +40,9 @@
         <IATA_Number>98417900</IATA_Number>
         <AgencyID Owner="C9">C9</AgencyID>
         <AgentUser>
-          <Name>ksmith</Name>
-          <AgentUserID>ramesh@jrt.com</AgentUserID>
-          <UserRole>ADMIN</UserRole>
+          <Name>Direct Sales Website</Name>
+          <AgentUserID>direct_sales_website</AgentUserID>
+          <UserRole>Admin</UserRole>
         </AgentUser>
       </TravelAgencySender>
     </Sender>

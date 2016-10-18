@@ -16,8 +16,8 @@
         </Position>
       </Device>
       <Event>
-        <Code>9</Code>
-        <Definition>Shop</Definition>
+        <Code>10</Code>
+        <Definition>Seat Availability</Definition>
       </Event>
     </TouchPoint>
   </PointOfSale>
