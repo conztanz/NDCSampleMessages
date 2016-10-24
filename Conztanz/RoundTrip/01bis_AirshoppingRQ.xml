@@ -56,9 +56,20 @@
 	</Parameters>
 	<Travelers>
 		<Traveler>
-			<AnonymousTraveler>
-				<PTC Quantity="1">ADT</PTC>
-			</AnonymousTraveler>
+			<RecognizedTraveler>
+				<Name>
+					<Surname>Blon</Surname>
+					<Given>Guigui</Given>
+					<Title>MR</Title>
+				</Name>
+				<Gender>Male</Gender>
+				<FQTVs>
+					<AirlineID>WF</AirlineID>
+					<Account>
+						<Number>123456789</Number>
+					</Account>
+				</FQTVs>
+			</RecognizedTraveler>
 		</Traveler>
 	</Travelers>
 	<CoreQuery>
