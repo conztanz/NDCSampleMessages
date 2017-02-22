@@ -5,10 +5,10 @@
     </Document>
     <Success />
     <AirShoppingProcessing />
-    <ShoppingResponseIDs>
+    <ShoppingResponseID>
         <Owner>ZZ</Owner>
         <ResponseID>RE73a46b48e221653ecd90fb7fc5bc90314000b866</ResponseID>
-    </ShoppingResponseIDs>
+    </ShoppingResponseID>
     <OffersGroup>
         <AirlineOffers>
             <TotalOfferQuantity>6</TotalOfferQuantity>
@@ -53,8 +53,6 @@
                     </OfferPrice>
                     <Associations>
                         <ApplicableFlight>
-                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
-                            <FlightReferences>FL1-1 FL2-1</FlightReferences>
                             <FlightSegmentReference ref="SEG1-1">
                                 <ClassOfService>
                                     <Code SeatsLeft="4">Y</Code>
@@ -65,6 +63,8 @@
                                     <Code SeatsLeft="4">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
+                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
+                            <FlightReferences>FL1-1 FL2-1</FlightReferences>
                         </ApplicableFlight>
                         <PriceClass>
                             <PriceClassReference>PC1</PriceClassReference>
@@ -118,8 +118,6 @@
                     </OfferPrice>
                     <Associations>
                         <ApplicableFlight>
-                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
-                            <FlightReferences>FL1-1 FL3-1 FL6-1</FlightReferences>
                             <FlightSegmentReference ref="SEG1-1">
                                 <ClassOfService>
                                     <Code SeatsLeft="8">Y</Code>
@@ -135,6 +133,8 @@
                                     <Code SeatsLeft="8">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
+                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
+                            <FlightReferences>FL1-1 FL3-1 FL6-1</FlightReferences>
                         </ApplicableFlight>
                         <PriceClass>
                             <PriceClassReference>PC1</PriceClassReference>
@@ -234,8 +234,6 @@
                     </OfferPrice>
                     <Associations>
                         <ApplicableFlight>
-                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
-                            <FlightReferences>FL1-1 FL2-1</FlightReferences>
                             <FlightSegmentReference ref="SEG1-1">
                                 <ClassOfService>
                                     <Code SeatsLeft="5">N</Code>
@@ -246,6 +244,8 @@
                                     <Code SeatsLeft="5">N</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
+                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
+                            <FlightReferences>FL1-1 FL2-1</FlightReferences>
                         </ApplicableFlight>
                         <PriceClass>
                             <PriceClassReference>PC3</PriceClassReference>
@@ -299,8 +299,6 @@
                     </OfferPrice>
                     <Associations>
                         <ApplicableFlight>
-                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
-                            <FlightReferences>FL4-1 FL5-1 FL2-1</FlightReferences>
                             <FlightSegmentReference ref="SEG4-1">
                                 <ClassOfService>
                                     <Code SeatsLeft="5">Y</Code>
@@ -316,6 +314,8 @@
                                     <Code SeatsLeft="5">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
+                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
+                            <FlightReferences>FL4-1 FL5-1 FL2-1</FlightReferences>
                         </ApplicableFlight>
                         <PriceClass>
                             <PriceClassReference>PC1</PriceClassReference>
@@ -369,8 +369,6 @@
                     </OfferPrice>
                     <Associations>
                         <ApplicableFlight>
-                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
-                            <FlightReferences>FL4-1 FL5-1 FL3-1 FL6-1</FlightReferences>
                             <FlightSegmentReference ref="SEG4-1">
                                 <ClassOfService>
                                     <Code SeatsLeft="4">Y</Code>
@@ -391,6 +389,8 @@
                                     <Code SeatsLeft="4">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
+                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
+                            <FlightReferences>FL4-1 FL5-1 FL3-1 FL6-1</FlightReferences>
                         </ApplicableFlight>
                         <PriceClass>
                             <PriceClassReference>PC1</PriceClassReference>
@@ -490,8 +490,6 @@
                     </OfferPrice>
                     <Associations>
                         <ApplicableFlight>
-                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
-                            <FlightReferences>FL4-1 FL5-1 FL3-1 FL6-1</FlightReferences>
                             <FlightSegmentReference ref="SEG4-1">
                                 <ClassOfService>
                                     <Code SeatsLeft="4">M</Code>
@@ -512,6 +510,8 @@
                                     <Code SeatsLeft="4">M</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
+                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
+                            <FlightReferences>FL4-1 FL5-1 FL3-1 FL6-1</FlightReferences>
                         </ApplicableFlight>
                         <PriceClass>
                             <PriceClassReference>PC2</PriceClassReference>

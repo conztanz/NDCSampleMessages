@@ -93,23 +93,19 @@
       </OriginDestination>
     </OriginDestinations>
   </CoreQuery>
-  <Preferences>
-    <Preference>
+  <Preference>
       <AirlinePreferences>
         <Airline>
           <AirlineID>ZZ</AirlineID>
         </Airline>
       </AirlinePreferences>
-    </Preference>
-    <Preference>
       <CabinPreferences>
         <CabinType>
           <Code>Y</Code>
           <Definition>Economy</Definition>
         </CabinType>
       </CabinPreferences>
-    </Preference>
-  </Preferences>
+  </Preference>
   <Metadata>
     <Other>
       <OtherMetadata>

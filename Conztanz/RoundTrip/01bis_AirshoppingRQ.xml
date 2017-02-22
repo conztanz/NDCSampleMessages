@@ -104,23 +104,19 @@
 			</OriginDestination>
 		</OriginDestinations>
 	</CoreQuery>
-	<Preferences>
-		<Preference>
-			<AirlinePreferences>
-				<Airline>
-					<AirlineID>WF</AirlineID>
-				</Airline>
-			</AirlinePreferences>
-		</Preference>
-		<Preference>
-			<CabinPreferences>
-				<CabinType>
-					<Code>Y</Code>
-					<Definition>Economy</Definition>
-				</CabinType>
-			</CabinPreferences>
-		</Preference>
-	</Preferences>
+	<Preference>
+		<AirlinePreferences>
+			<Airline>
+				<AirlineID>WF</AirlineID>
+			</Airline>
+		</AirlinePreferences>
+		<CabinPreferences>
+			<CabinType>
+				<Code>Y</Code>
+				<Definition>Economy</Definition>
+			</CabinType>
+		</CabinPreferences>
+	</Preference>
 	<Metadata>
 		<Other>
 			<OtherMetadata>

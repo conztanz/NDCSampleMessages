@@ -59,7 +59,7 @@
 			<OriginDestinationReferences>OD2</OriginDestinationReferences>
 		</OriginDestination>
 	</Query>
-	<DataList>
+	<DataLists>
       <FlightSegmentList>
         <FlightSegment SegmentKey="SEG1">
           <Departure>
@@ -154,5 +154,5 @@
           <FlightReferences>FL2</FlightReferences>
         </OriginDestination>
       </OriginDestinationList>
-    </DataList>
+    </DataLists>
 </SeatAvailabilityRQ>

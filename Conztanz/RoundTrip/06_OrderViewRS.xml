@@ -125,7 +125,7 @@
                 </OrderItem>
             </OrderItems>
         </Order>
-        <DataList>
+        <DataLists>
             <FlightSegmentList>
                 <FlightSegment SegmentKey="SEG1-1">
                     <Departure>
@@ -309,7 +309,7 @@
                     </Associations>
                 </Service>
             </ServiceList>
-        </DataList>
+        </DataLists>
         <Metadata>
             <Other>
                 <OtherMetadata>

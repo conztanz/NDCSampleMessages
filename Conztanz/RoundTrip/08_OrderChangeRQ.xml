@@ -96,14 +96,7 @@
           <OrderItemID Owner="ZZ">2#M#188839328#79397440</OrderItemID>
           <Associations>
             <Passengers>
-              <Passenger refs="PAX1">
-                <PTC Quantity="1">ADT</PTC>
-                <Name>
-                  <Surname>Smith</Surname>
-                  <Given>John</Given>
-                </Name>
-                <Gender>Male</Gender>
-              </Passenger>
+              <PassengerReferences>PAX1</PassengerReferences>
             </Passengers>
           </Associations>
           <ActionType>Update</ActionType>
@@ -111,4 +104,16 @@
       </OrderItems>
     </Order>
   </Query>
+  <DataLists>
+    <RecognizedTravelerList>
+      <RecognizedTraveler ObjectKey="pax1">
+          <PTC Quantity="1">ADT</PTC>
+          <Name>
+            <Surname>Smith</Surname>
+            <Given>John</Given>
+          </Name>
+          <Gender>Male</Gender>
+      </RecognizedTraveler>
+    </RecognizedTravelerList>
+  </DataLists>
 </OrderChangeRQ>
