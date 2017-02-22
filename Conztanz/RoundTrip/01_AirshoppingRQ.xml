@@ -1,124 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AirShoppingRQ 
-	xmlns="http://www.iata.org/IATA/EDIST" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance ../AirShoppingRQ.xsd" EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-12-10T12:39:00Z" Version="15.2" Target="Test" PrimaryLangID="en" AltLangID="en" RetransmissionIndicator="false" AsynchronousAllowedInd="false" TransactionIdentifier="a" SequenceNmbr="201">
-	<PointOfSale>
-		<Location>
-			<CountryCode>NO</CountryCode>
-			<CityCode>OSL</CityCode>
-		</Location>
-		<RequestTime Zone="EST">2016-10-12T07:38:00</RequestTime>
-		<TouchPoint>
-			<Device>
-				<Code>2</Code>
-				<Definition>Web Browser</Definition>
-				<Position>
-					<Latitude>60.20166586</Latitude>
-					<Longitude>11.083666332</Longitude>
-					<NAC>HWQHP T0ZM6</NAC>
-				</Position>
-			</Device>
-			<Event>
-				<Code>9</Code>
-				<Definition>Shop</Definition>
-			</Event>
-		</TouchPoint>
-	</PointOfSale>
-	<Document>
-		<Name>CONZTANZ NDC GATEWAY</Name>
-		<ReferenceVersion>1.0</ReferenceVersion>
-	</Document>
-	<Party>
-		<Sender>
-			<TravelAgencySender>
-				<Contacts>
-					<Contact>
-						<EmailContact>
-							<Address>web@wideröe.com</Address>
-						</EmailContact>
-					</Contact>
-				</Contacts>
-				<PseudoCity>A4A</PseudoCity>
-				<IATA_Number>98417900</IATA_Number>
-				<AgencyID Owner="C9">C9</AgencyID>
-				<AgentUser>
-					<Name>Direct Sales Website</Name>
-					<AgentUserID>direct_sales_website</AgentUserID>
-					<UserRole>Admin</UserRole>
-				</AgentUser>
-			</TravelAgencySender>
-		</Sender>
-	</Party>
-	<Parameters>
-		<CurrCodes>
-			<CurrCode>NOK</CurrCode>
-		</CurrCodes>
-	</Parameters>
-	<Travelers>
-		<Traveler>
-			<AnonymousTraveler>
-				<PTC Quantity="1">ADT</PTC>
-			</AnonymousTraveler>
-		</Traveler>
-	</Travelers>
-	<CoreQuery>
-		<OriginDestinations>
-			<OriginDestination>
-				<Departure>
-					<AirportCode>BOO</AirportCode>
-					<Date>2016-11-05</Date>
-				</Departure>
-				<Arrival>
-					<AirportCode>BDO</AirportCode>
-				</Arrival>
-				<MarketingCarrierAirline>
-					<AirlineID>WF</AirlineID>
-					<Name>Wideröe</Name>
-				</MarketingCarrierAirline>
-				<CalendarDates DaysBefore="2" DaysAfter="2"/>
-			</OriginDestination>
-			<OriginDestination>
-				<Departure>
-					<AirportCode>BDO</AirportCode>
-					<Date>2016-11-07</Date>
-				</Departure>
-				<Arrival>
-					<AirportCode>BOO</AirportCode>
-				</Arrival>
-				<MarketingCarrierAirline>
-					<AirlineID>WF</AirlineID>
-					<Name>Wideröe</Name>
-				</MarketingCarrierAirline>
-				<CalendarDates DaysBefore="2" DaysAfter="2"/>
-			</OriginDestination>
-		</OriginDestinations>
-	</CoreQuery>
-	<Preferences>
-		<Preference>
-			<AirlinePreferences>
-				<Airline>
-					<AirlineID>WF</AirlineID>
-				</Airline>
-			</AirlinePreferences>
-		</Preference>
-		<Preference>
-			<CabinPreferences>
-				<CabinType>
-					<Code>Y</Code>
-					<Definition>Economy</Definition>
-				</CabinType>
-			</CabinPreferences>
-		</Preference>
-	</Preferences>
-	<Metadata>
-		<Other>
-			<OtherMetadata>
-				<CurrencyMetadatas>
-					<CurrencyMetadata MetadataKey="NOK">
-						<Decimals>2</Decimals>
-					</CurrencyMetadata>
-				</CurrencyMetadatas>
-			</OtherMetadata>
-		</Other>
-	</Metadata>
+  xmlns="http://www.iata.org/IATA/EDIST" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance ../AirShoppingRQ.xsd" EchoToken="8565b1c621a7a3254aa716085697784d5" Version="15.2" Target="Test" PrimaryLangID="en">
+  <PointOfSale>
+    <Location>
+      <CountryCode>FR</CountryCode>
+      <CityCode>NCE</CityCode>
+    </Location>
+    <RequestTime>2017-02-07T14:22:52</RequestTime>
+    <TouchPoint>
+      <Device>
+        <Code>2</Code>
+        <Definition>Web Browser</Definition>
+        <Position>
+          <Latitude>43.791157</Latitude>
+          <Longitude>7.234303</Longitude>
+          <NAC>HL2K1 Q8XN7</NAC>
+        </Position>
+      </Device>
+      <Event>
+        <Code>9</Code>
+        <Definition>Shop</Definition>
+      </Event>
+    </TouchPoint>
+  </PointOfSale>
+  <Document>
+    <Name>CONZTANZ NDC GATEWAY</Name>
+    <ReferenceVersion>1.0</ReferenceVersion>
+  </Document>
+  <Party>
+    <Sender>
+      <TravelAgencySender>
+        <Contacts>
+          <Contact>
+            <EmailContact>
+              <Address>web@conztanz.com</Address>
+            </EmailContact>
+          </Contact>
+        </Contacts>
+        <PseudoCity>A4A</PseudoCity>
+        <IATA_Number>98765432</IATA_Number>
+        <AgencyID Owner="ZZ">ZZ</AgencyID>
+        <AgentUser>
+          <Name>Direct Sales Website</Name>
+          <AgentUserID>direct_sales_website</AgentUserID>
+          <UserRole>Admin</UserRole>
+        </AgentUser>
+      </TravelAgencySender>
+    </Sender>
+  </Party>
+  <Parameters>
+    <CurrCodes>
+      <CurrCode>EUR</CurrCode>
+    </CurrCodes>
+  </Parameters>
+  <Travelers>
+    <Traveler>
+      <AnonymousTraveler>
+        <PTC Quantity="1">ADT</PTC>
+      </AnonymousTraveler>
+    </Traveler>
+  </Travelers>
+  <CoreQuery>
+    <OriginDestinations>
+      <OriginDestination>
+        <Departure>
+          <AirportCode>NCE</AirportCode>
+          <Date>2017-03-22</Date>
+        </Departure>
+        <Arrival>
+          <AirportCode>EXT</AirportCode>
+        </Arrival>
+        <MarketingCarrierAirline>
+          <AirlineID>ZZ</AirlineID>
+          <Name>Conztanz</Name>
+        </MarketingCarrierAirline>
+        <CalendarDates DaysBefore="2" DaysAfter="2"/>
+      </OriginDestination>
+      <OriginDestination>
+        <Departure>
+          <AirportCode>EXT</AirportCode>
+          <Date>2017-03-28</Date>
+        </Departure>
+        <Arrival>
+          <AirportCode>NCE</AirportCode>
+        </Arrival>
+        <MarketingCarrierAirline>
+          <AirlineID>ZZ</AirlineID>
+          <Name>Conztanz</Name>
+        </MarketingCarrierAirline>
+        <CalendarDates DaysBefore="2" DaysAfter="2"/>
+      </OriginDestination>
+    </OriginDestinations>
+  </CoreQuery>
+  <Preferences>
+    <Preference>
+      <AirlinePreferences>
+        <Airline>
+          <AirlineID>ZZ</AirlineID>
+        </Airline>
+      </AirlinePreferences>
+    </Preference>
+    <Preference>
+      <CabinPreferences>
+        <CabinType>
+          <Code>Y</Code>
+          <Definition>Economy</Definition>
+        </CabinType>
+      </CabinPreferences>
+    </Preference>
+  </Preferences>
+  <Metadata>
+    <Other>
+      <OtherMetadata>
+        <CurrencyMetadatas>
+          <CurrencyMetadata MetadataKey="EUR">
+            <Decimals>2</Decimals>
+          </CurrencyMetadata>
+        </CurrencyMetadatas>
+      </OtherMetadata>
+    </Other>
+  </Metadata>
 </AirShoppingRQ>

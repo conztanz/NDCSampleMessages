@@ -1,212 +1,323 @@
-<OrderViewRS TimeStamp="2016-10-17T12:16:00" Version="15.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderViewRS.xsd">
+<OrderViewRS EchoToken="4caead6c28872f069c8f4c75a023048073b2cc9f" TimeStamp="2017-02-17T15:45:41" Version="15.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderViewRS.xsd">
     <Document>
-        <Name>WF</Name>
+        <Name>ZZ</Name>
         <ReferenceVersion>1.0</ReferenceVersion>
     </Document>
     <Party>
         <Sender>
-        <TravelAgencySender>
-            <Contacts>
-            <Contact>
-                <EmailContact>
-                <Address>web@wideröe.no</Address>
-                </EmailContact>
-            </Contact>
-            </Contacts>
-            <PseudoCity>A4A</PseudoCity>
-            <IATA_Number>98417900</IATA_Number>
-            <AgencyID Owner="C9">C9</AgencyID>
-            <AgentUser>
-            <Name>Direct Sales Website</Name>
-            <AgentUserID>direct_sales_website</AgentUserID>
-            <UserRole>Admin</UserRole>
-            </AgentUser>
-        </TravelAgencySender>
+            <TravelAgencySender>
+                <Contacts>
+                    <Contact>
+                        <EmailContact>
+                            <Address>web@conztanz.com</Address>
+                        </EmailContact>
+                    </Contact>
+                </Contacts>
+                <PseudoCity>A4A</PseudoCity>
+                <IATA_Number>98765432</IATA_Number>
+                <AgencyID Owner="ZZ">ZZ</AgencyID>
+                <AgentUser>
+                    <Name>Direct Sales Website</Name>
+                    <AgentUserID>direct_sales_website</AgentUserID>
+                    <UserRole>Admin</UserRole>
+                </AgentUser>
+            </TravelAgencySender>
         </Sender>
         <Participants xsi:nil="true" />
         <Recipient xsi:nil="true" />
     </Party>
-    <Success />
+    <Success/>
     <Response>
         <OrderViewProcessing />
         <Passengers>
-      
-    </Passengers>
+            <Passenger ObjectKey="PAX1">
+                <PTC Quantity="1">ADT</PTC>
+                <ResidenceCode>FR</ResidenceCode>
+                <Age>
+                    <BirthDate>1985-09-05</BirthDate>
+                </Age>
+                <Name>
+                    <Surname>John</Surname>
+                    <Given>Smith</Given>
+                </Name>
+                <Contacts>
+                    <Contact>
+                        <AddressContact>
+                            <Street>7 rue de la bourse</Street>
+                            <PostalCode>75002</PostalCode>
+                            <CountryCode>FR</CountryCode>
+                        </AddressContact>
+                    </Contact>
+                    <Contact>
+                        <EmailContact>
+                            <Address>john.smith@conztanz.com</Address>
+                        </EmailContact>
+                    </Contact>
+                    <Contact>
+                        <PhoneContact>
+                            <Application>Emergency</Application>
+                            <Number>33612345678</Number>
+                        </PhoneContact>
+                    </Contact>
+                </Contacts>
+            </Passenger>
+        </Passengers>
         <Order>
-            <OrderID Owner="WF">ZITBH0</OrderID>
+            <OrderID Owner="ZZ">0BBU2F</OrderID>
             <BookingReferences>
                 <BookingReference>
-                    <ID>CYGQJG</ID>
-                    <AirlineID>WF</AirlineID>
+                    <ID>QU5TRG</ID>
+                    <AirlineID>ZZ</AirlineID>
                 </BookingReference>
             </BookingReferences>
             <TotalOrderPrice>
                 <DetailCurrencyPrice>
-                    <Total Code="NOK">65450</Total>
+                    <Total Code="EUR">120876</Total>
                     <Taxes>
-                        <Total>25272</Total>
+                        <Total Code="EUR">43515</Total>
                     </Taxes>
                 </DetailCurrencyPrice>
             </TotalOrderPrice>
             <OrderItems>
                 <OrderItem>
-                    <OrderItemID Owner="WF">1#M#597251152#537651182</OrderItemID>
+                    <OrderItemID Owner="ZZ">1#M#664783373#136871039</OrderItemID>
                     <FlightItem>
                         <OriginDestination>
-                            <Flight refs="SEG5">
+                            <Flight refs="SEG1-1">
                                 <Departure>
-                                    <AirportCode>FRA</AirportCode>
-                                    <Date>2016-05-26</Date>
+                                    <AirportCode>NCE</AirportCode>
+                                    <Date>2017-03-22</Date>
                                 </Departure>
                                 <Arrival>
-                                    <AirportCode>CDG</AirportCode>
+                                    <AirportCode>EXT</AirportCode>
                                 </Arrival>
                                 <MarketingCarrier>
-                                    <AirlineID>WF</AirlineID>
-                                    <Name>Kronos Air</Name>
-                                    <FlightNumber>1030</FlightNumber>
+                                    <AirlineID>ZZ</AirlineID>
+                                    <Name>Conztanz airline</Name>
+                                    <FlightNumber>1520</FlightNumber>
                                 </MarketingCarrier>
-                                <OperatingCarrier>
-                                    <AirlineID>WF</AirlineID>
-                                </OperatingCarrier>
                             </Flight>
-                            <Flight refs="SEG6">
+                            <Flight refs="SEG2-1">
                                 <Departure>
-                                    <AirportCode>CDG</AirportCode>
-                                    <Date>2016-05-26</Date>
+                                    <AirportCode>EXT</AirportCode>
+                                    <Date>2017-03-28</Date>
                                 </Departure>
                                 <Arrival>
-                                    <AirportCode>TXL</AirportCode>
+                                    <AirportCode>NCE</AirportCode>
                                 </Arrival>
                                 <MarketingCarrier>
-                                    <AirlineID>WF</AirlineID>
-                                    <Name>Kronos Air</Name>
-                                    <FlightNumber>1030</FlightNumber>
+                                    <AirlineID>ZZ</AirlineID>
+                                    <Name>Conztanz airline</Name>
+                                    <FlightNumber>126</FlightNumber>
                                 </MarketingCarrier>
-                                <OperatingCarrier>
-                                    <AirlineID>WF</AirlineID>
-                                </OperatingCarrier>
                             </Flight>
                         </OriginDestination>
                     </FlightItem>
                     <Associations>
                         <Passengers>
-                            <PassengerReferences>PAX1 </PassengerReferences>
+                            <PassengerReferences>PAX1</PassengerReferences>
                         </Passengers>
+                        <IncludedService>
+                            <ServiceReferences>SV2 SV4 SV6 </ServiceReferences>
+                        </IncludedService>
+                        <OtherAssociation Type="PriceClass" ReferenceValue="PC1"></OtherAssociation>
                     </Associations>
                 </OrderItem>
             </OrderItems>
         </Order>
         <DataList>
             <FlightSegmentList>
-                <FlightSegment SegmentKey="SEG5">
+                <FlightSegment SegmentKey="SEG1-1">
                     <Departure>
-                        <AirportCode>FRA</AirportCode>
-                        <Date>2016-05-26</Date>
-                        <Time>09:35</Time>
-                        <AirportName>Frankfurt International</AirportName>
+                        <AirportCode>NCE</AirportCode>
+                        <Date>2017-03-22</Date>
+                        <Time>09:15</Time>
+                        <AirportName>Cote D\\'Azur</AirportName>
                     </Departure>
                     <Arrival>
-                        <AirportCode>CDG</AirportCode>
-                        <Date>2016-05-26</Date>
-                        <Time>10:45</Time>
-                        <AirportName>Charles de Gaulle</AirportName>
+                        <AirportCode>EXT</AirportCode>
+                        <Date>2017-03-22</Date>
+                        <Time>11:00</Time>
+                        <AirportName>Exeter</AirportName>
                     </Arrival>
                     <MarketingCarrier>
-                        <AirlineID>WF</AirlineID>
-                        <Name>Kronos Air</Name>
-                        <FlightNumber>1030</FlightNumber>
+                        <AirlineID>ZZ</AirlineID>
+                        <Name>Conztanz airline</Name>
+                        <FlightNumber>1520</FlightNumber>
                     </MarketingCarrier>
-                    <OperatingCarrier>
-                        <AirlineID>WF</AirlineID>
-                        <Name>Kronos Air</Name>
-                        <FlightNumber>1030</FlightNumber>
-                    </OperatingCarrier>
                     <Equipment>
-                        <AircraftCode>320</AircraftCode>
-                        <Name>320 - AIRBUS INDUSTRIE A320-100/200 JET</Name>
+                        <AircraftCode>DH8</AircraftCode>
+                        <Name>DHC-8 400</Name>
                     </Equipment>
-                    <ClassOfService>
-                        <Code>M</Code>
-                    </ClassOfService>
                     <FlightDetail>
                         <FlightDuration>
-                            <Value>PT1H70M</Value>
+                            <Value>PT2H45M</Value>
                         </FlightDuration>
                     </FlightDetail>
                 </FlightSegment>
-                <FlightSegment SegmentKey="SEG6">
+                <FlightSegment SegmentKey="SEG2-1">
                     <Departure>
-                        <AirportCode>CDG</AirportCode>
-                        <Date>2016-05-26</Date>
-                        <Time>14:45</Time>
-                        <AirportName>Charles de Gaulle</AirportName>
+                        <AirportCode>EXT</AirportCode>
+                        <Date>2017-03-28</Date>
+                        <Time>11:50</Time>
+                        <AirportName>Exeter</AirportName>
                     </Departure>
                     <Arrival>
-                        <AirportCode>TXL</AirportCode>
-                        <Date>2016-05-26</Date>
-                        <Time>16:25</Time>
-                        <AirportName>Berlin Tegel Airport</AirportName>
+                        <AirportCode>NCE</AirportCode>
+                        <Date>2017-03-28</Date>
+                        <Time>14:45</Time>
+                        <AirportName>Cote D\\'Azur</AirportName>
                     </Arrival>
                     <MarketingCarrier>
-                        <AirlineID>WF</AirlineID>
-                        <Name>Kronos Air</Name>
-                        <FlightNumber>1030</FlightNumber>
+                        <AirlineID>ZZ</AirlineID>
+                        <Name>Conztanz airline</Name>
+                        <FlightNumber>126</FlightNumber>
                     </MarketingCarrier>
-                    <OperatingCarrier>
-                        <AirlineID>WF</AirlineID>
-                        <Name>Kronos Air</Name>
-                        <FlightNumber>1030</FlightNumber>
-                    </OperatingCarrier>
                     <Equipment>
-                        <AircraftCode>320</AircraftCode>
-                        <Name>320 - AIRBUS INDUSTRIE A320-100/200 JET</Name>
+                        <AircraftCode>DH8</AircraftCode>
+                        <Name>DHC-8 400</Name>
                     </Equipment>
-                    <ClassOfService>
-                        <Code>M</Code>
-                    </ClassOfService>
                     <FlightDetail>
                         <FlightDuration>
-                            <Value>PT1H100M</Value>
+                            <Value>PT1H55M</Value>
                         </FlightDuration>
                     </FlightDetail>
                 </FlightSegment>
             </FlightSegmentList>
             <FlightList>
-                <Flight FlightKey="FL3">
+                <Flight FlightKey="FL1-1">
                     <Journey>
-                        <Time>PT1H70M</Time>
+                        <Time>PT2H45M</Time>
                     </Journey>
-                    <SegmentReferences>SEG5 SEG6 </SegmentReferences>
+                    <SegmentReferences>SEG1-1</SegmentReferences>
+                </Flight>
+                <Flight FlightKey="FL2-1">
+                    <Journey>
+                        <Time>PT1H55M</Time>
+                    </Journey>
+                    <SegmentReferences>SEG2-1</SegmentReferences>
                 </Flight>
             </FlightList>
             <OriginDestinationList>
                 <OriginDestination OriginDestinationKey="OD1">
-                    <DepartureCode>FRA</DepartureCode>
-                    <ArrivalCode>TXL</ArrivalCode>
-                    <FlightReferences>FL3 </FlightReferences>
+                    <DepartureCode>NCE</DepartureCode>
+                    <ArrivalCode>EXT</ArrivalCode>
+                    <FlightReferences>FL1-1</FlightReferences>
+                </OriginDestination>
+                <OriginDestination OriginDestinationKey="OD2">
+                    <DepartureCode>EXT</DepartureCode>
+                    <ArrivalCode>NCE</ArrivalCode>
+                    <FlightReferences>FL2-1</FlightReferences>
                 </OriginDestination>
             </OriginDestinationList>
+            <PriceClassList>
+                <PriceClass ObjectKey="PC1">
+                    <Name>FULLFLEX</Name>
+                    <Descriptions>
+                        <Description>
+                            <Text>Premium product with full flexibilty</Text>
+                        </Description>
+                    </Descriptions>
+                    <ClassOfService>
+                        <Code>Y</Code>
+                    </ClassOfService>
+                </PriceClass>
+            </PriceClassList>
+            <ServiceList>
+                <Service ObjectKey="SV2">
+                    <ServiceID Owner="ZZ">0020</ServiceID>
+                    <Name>2*23kg bagages</Name>
+                    <Encoding />
+                    <Descriptions>
+                        <Description>
+                            <Text>2 bags, 23kg each</Text>
+                        </Description>
+                    </Descriptions>
+                    <Settlement>
+                        <Method>
+                            <Code>AD</Code>
+                            <Definition>Internal Airline Document</Definition>
+                        </Method>
+                    </Settlement>
+                    <Price>
+                        <Total>0</Total>
+                        <PassengerReferences></PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences></TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG1-1 SEG2-1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SV4">
+                    <ServiceID Owner="ZZ">0021</ServiceID>
+                    <Name>10000 miles</Name>
+                    <Encoding />
+                    <Descriptions>
+                        <Description>
+                            <Text>Credits 10000 miles to your account.</Text>
+                        </Description>
+                    </Descriptions>
+                    <Settlement>
+                        <Method>
+                            <Code>AD</Code>
+                            <Definition>Internal Airline Document</Definition>
+                        </Method>
+                    </Settlement>
+                    <Price>
+                        <Total>0</Total>
+                        <PassengerReferences></PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences></TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG1-1 SEG2-1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SV6">
+                    <ServiceID Owner="ZZ">0022</ServiceID>
+                    <Name>Fasttrack</Name>
+                    <Encoding />
+                    <Descriptions>
+                        <Description>
+                            <Text>Dedicated fast track security line</Text>
+                        </Description>
+                    </Descriptions>
+                    <Settlement>
+                        <Method>
+                            <Code>AD</Code>
+                            <Definition>Internal Airline Document</Definition>
+                        </Method>
+                    </Settlement>
+                    <Price>
+                        <Total>0</Total>
+                        <PassengerReferences></PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences></TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG1-1 SEG2-1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+            </ServiceList>
         </DataList>
         <Metadata>
             <Other>
                 <OtherMetadata>
                     <CurrencyMetadatas>
-                        <CurrencyMetadata MetadataKey="NOK">
+                        <CurrencyMetadata MetadataKey="EUR">
                             <Decimals>2</Decimals>
                         </CurrencyMetadata>
                     </CurrencyMetadatas>
-                </OtherMetadata>
-                <OtherMetadata>
-                    <DescriptionMetadatas>
-                        <DescriptionMetadata MetadataKey="ID1">
-                            <AugmentationPoint>
-                                <AugPoint>
-                                    <a:Logo xmlns:a="http://www.iata.org">http://uat.jrtechnologies.in/ServiceImage/kronos-50x90.png</a:Logo>
-                                </AugPoint>
-                            </AugmentationPoint>
-                        </DescriptionMetadata>
-                    </DescriptionMetadatas>
                 </OtherMetadata>
             </Other>
         </Metadata>

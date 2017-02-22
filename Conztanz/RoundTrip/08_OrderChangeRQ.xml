@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderChangeRQ xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/EDIST 
+../OrderChangeRQ.xsd" EchoToken="8fdb1c621a7a4454aa3360556e778499" Version="15.2" Target="Test" PrimaryLangID="en">
+  <PointOfSale>
+    <Location>
+        <CountryCode>FR</CountryCode>
+        <CityCode>NCE</CityCode>
+    </Location>
+    <RequestTime>2017-02-17T15:49:11</RequestTime>
+    <TouchPoint>
+        <Device>
+            <Code>2</Code>
+            <Definition>Web Browser</Definition>
+            <Position>
+                <Latitude>43.791157</Latitude>
+                <Longitude>7.234303</Longitude>
+                <NAC>HL2K1 Q8XN7</NAC>
+            </Position>
+        </Device>
+        <Event>
+            <Code>1</Code>
+        </Event>
+    </TouchPoint>
+</PointOfSale>
+  <Document>
+    <Name>Conztanz</Name>
+    <ReferenceVersion>1.0</ReferenceVersion>
+  </Document>
+  <Party>
+    <Sender>
+      <TravelAgencySender>
+        <Contacts>
+          <Contact>
+            <EmailContact>
+              <Address>web@conztanz.com</Address>
+            </EmailContact>
+          </Contact>
+        </Contacts>
+        <PseudoCity>A4A</PseudoCity>
+        <IATA_Number>98765432</IATA_Number>
+        <AgencyID Owner="ZZ">ZZ</AgencyID>
+        <AgentUser>
+          <Name>Direct Sales Website</Name>
+          <AgentUserID>Direct Sales Website</AgentUserID>
+          <UserRole>Admin</UserRole>
+        </AgentUser>
+      </TravelAgencySender>
+    </Sender>
+  </Party>
+  <Query>
+        <Passengers>
+            <Passenger ObjectKey="PAX1">
+                <PTC Quantity="1">ADT</PTC>
+                <ResidenceCode>FR</ResidenceCode>
+                <Age>
+                    <BirthDate>1985-09-05</BirthDate>
+                </Age>
+                <Name>
+                    <Surname>John</Surname>
+                    <Given>Smith</Given>
+                </Name>
+                <Contacts>
+                    <Contact>
+                        <AddressContact>
+                            <Street>635 route des Lucioles</Street>
+                            <PostalCode>06560</PostalCode>
+                            <CountryCode>FR</CountryCode>
+                        </AddressContact>
+                    </Contact>
+                    <Contact>
+                        <EmailContact>
+                            <Address>web@conztanz.com</Address>
+                        </EmailContact>
+                    </Contact>
+                    <Contact>
+                        <PhoneContact>
+                            <Application>Emergency</Application>
+                            <Number>33612345678</Number>
+                        </PhoneContact>
+                    </Contact>
+                </Contacts>
+            </Passenger>
+      </Passengers>
+    <Order>
+      <OrderID Owner="ZZ">F15M73</OrderID>
+      <Details>
+        <ShoppingResponse>
+          <Owner>ZZ</Owner>
+          <ResponseID>RE73a46b48e221653ecd90fb7fc5bc90314000b866</ResponseID>
+          <OfferID Owner="ZZ">111-1-19401246-US</OfferID>
+        </ShoppingResponse>
+      </Details>
+      <ActionType>Update</ActionType>
+      <OrderItems>
+        <OrderItem>
+          <OrderItemID Owner="ZZ">2#M#188839328#79397440</OrderItemID>
+          <Associations>
+            <Passengers>
+              <Passenger refs="PAX1">
+                <PTC Quantity="1">ADT</PTC>
+                <Name>
+                  <Surname>Smith</Surname>
+                  <Given>John</Given>
+                </Name>
+                <Gender>Male</Gender>
+              </Passenger>
+            </Passengers>
+          </Associations>
+          <ActionType>Update</ActionType>
+        </OrderItem>
+      </OrderItems>
+    </Order>
+  </Query>
+</OrderChangeRQ>

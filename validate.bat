@@ -8,3 +8,4 @@ xmllint --noout --schema ..\ndc-XMLSchemas\SeatAvailabilityRS.xsd .\Conztanz\Rou
 xmllint --noout --schema ..\ndc-XMLSchemas\OrderCreateRQ.xsd .\Conztanz\RoundTrip\05_OrderCreateRQ.xml
 xmllint --noout --schema ..\ndc-XMLSchemas\OrderViewRS.xsd .\Conztanz\RoundTrip\06_OrderViewRS.xml
 xmllint --noout --schema ..\ndc-XMLSchemas\AirDocIssueRQ.xsd .\Conztanz\RoundTrip\07_AirDocIssueRQ.xml
+xmllint --noout --schema ..\ndc-XMLSchemas\OrderChangeRQ.xsd .\Conztanz\RoundTrip\08_OrderChangeRQ.xml

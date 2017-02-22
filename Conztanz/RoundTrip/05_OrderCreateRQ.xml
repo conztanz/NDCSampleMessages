@@ -2,18 +2,18 @@
 <OrderCreateRQ xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="15.2" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderCreateRQ.xsd">
   <PointOfSale>
     <Location>
-      <CountryCode>NO</CountryCode>
-      <CityCode>OSL</CityCode>
+      <CountryCode>FR</CountryCode>
+      <CityCode>NCE</CityCode>
     </Location>
-    <RequestTime Zone="EST">2016-10-12T07:38:00</RequestTime>
+    <RequestTime>2017-02-07T14:36:57</RequestTime>
     <TouchPoint>
       <Device>
         <Code>2</Code>
         <Definition>Web Browser</Definition>
         <Position>
-          <Latitude>60.20166586</Latitude>
-          <Longitude>11.083666332</Longitude>
-          <NAC>HWQHP T0ZM6</NAC>
+          <Latitude>43.791157</Latitude>
+          <Longitude>7.234303</Longitude>
+          <NAC>HL2K1 Q8XN7</NAC>
         </Position>
       </Device>
       <Event>
@@ -32,13 +32,13 @@
         <Contacts>
           <Contact>
             <EmailContact>
-              <Address>web@wideröe.no</Address>
+              <Address>web@conztanz.com</Address>
             </EmailContact>
           </Contact>
         </Contacts>
         <PseudoCity>A4A</PseudoCity>
-        <IATA_Number>98417900</IATA_Number>
-        <AgencyID Owner="C9">C9</AgencyID>
+        <IATA_Number>98765432</IATA_Number>
+        <AgencyID Owner="ZZ">ZZ</AgencyID>
         <AgentUser>
           <Name>Direct Sales Website</Name>
           <AgentUserID>direct_sales_website</AgentUserID>
@@ -51,32 +51,31 @@
     <Passengers>
       <Passenger ObjectKey="PAX1">
         <PTC Quantity="1">ADT</PTC>
-        <ResidenceCode>NO</ResidenceCode>
+        <ResidenceCode>FR</ResidenceCode>
         <Age>
           <BirthDate>1985-09-05</BirthDate>
         </Age>
         <Name>
-          <Surname>Blon</Surname>
-          <Given>Guigui</Given>
-          <Middle>N</Middle>
+          <Surname>John</Surname>
+          <Given>Smith</Given>
         </Name>
         <Contacts>
           <Contact>
             <AddressContact>
-              <Street>22 Main Street</Street>
-              <PostalCode>14202</PostalCode>
-              <CountryCode>DE</CountryCode>
+              <Street>7 rue de la bourse</Street>
+              <PostalCode>75002</PostalCode>
+              <CountryCode>FR</CountryCode>
             </AddressContact>
           </Contact>
           <Contact>
             <EmailContact>
-              <Address>guillaume@conztanz.com</Address>
+              <Address>john.smith@conztanz.com</Address>
             </EmailContact>
           </Contact>
           <Contact>
             <PhoneContact>
               <Application>Emergency</Application>
-              <Number>9869159259</Number>
+              <Number>33612345678</Number>
             </PhoneContact>
           </Contact>
         </Contacts>
@@ -84,14 +83,14 @@
     </Passengers>
     <OrderItems>
       <ShoppingResponse>
-        <Owner>WF</Owner>
-        <ResponseID>RE2a07c59a77634ad08a606f8639ea428c</ResponseID>
+        <Owner>ZZ</Owner>
+        <ResponseID>REea8e2aaecfa3302eca9226250eb36620641554a4</ResponseID>
         <Offers>
           <Offer>
-            <OfferID Owner="WF">111</OfferID>
+            <OfferID Owner="ZZ">111-1-10665372-UJ</OfferID>
             <OfferItems>
               <OfferItem>
-                <OfferItemID Owner="WF">1#M#109974565#309974565</OfferItemID>
+                <OfferItemID Owner="ZZ">111-1-1-H</OfferItemID>
                 <Passengers>
                   <PassengerReference>PAX1</PassengerReference>
                 </Passengers>
@@ -101,41 +100,5 @@
         </Offers>
       </ShoppingResponse>
     </OrderItems>
-      <Payments>
-        <Payment>
-          <Method>
-            <PaymentCard>
-              <CardCode>MC</CardCode>
-              <CardNumber>1111222233334444</CardNumber>
-              <SeriesCode>584</SeriesCode>
-              <EffectiveExpireDate>
-                <Effective>0322</Effective>
-              </EffectiveExpireDate>
-            </PaymentCard>
-          </Method>
-          <Amount Taxable="true">90722</Amount>
-          <Payer>
-            <Name>
-              <Surname>Blon</Surname>
-              <Given>Guigui</Given>
-            </Name>
-            <Contacts>
-              <Contact>
-                <AddressContact>
-                  <Street>22 Main Street</Street>
-                  <CityName>
-                    <CityCode>FRA</CityCode>
-                  </CityName>
-                  <PostalCode>14201</PostalCode>
-                  <CountryCode>DE</CountryCode>
-                </AddressContact>
-                <EmailContact>
-                  <Address>guillaume@conztanz.com</Address>
-                </EmailContact>
-              </Contact>
-            </Contacts>
-          </Payer>
-        </Payment>
-      </Payments>
   </Query>
 </OrderCreateRQ>

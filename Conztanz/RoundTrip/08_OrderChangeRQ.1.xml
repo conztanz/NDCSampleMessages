@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderChangeRQ xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/EDIST 
+../OrderChangeRQ.xsd" EchoToken="8fdb1c621a7a4454aa3360556e778499" TimeStamp="2015-12-10T12:39:00Z" Version="15.2" Target="Test" PrimaryLangID="en" AltLangID="en" RetransmissionIndicator="false" AsynchronousAllowedInd="false" TransactionIdentifier="a" SequenceNmbr="101">
+  <Document>
+    <Name>KRONOS NDC GATEWAY</Name>
+    <ReferenceVersion>1.0</ReferenceVersion>
+  </Document>
+  <Party>
+    <Sender>
+      <TravelAgencySender>
+        <Contacts>
+          <Contact>
+            <EmailContact>
+              <Address>web@conztanz.com</Address>
+            </EmailContact>
+          </Contact>
+        </Contacts>
+        <PseudoCity>A4A</PseudoCity>
+        <IATA_Number>98417900</IATA_Number>
+        <AgencyID Owner="ZZ">ZZ</AgencyID>
+        <AgentUser>
+          <Name>Direct Sales Website</Name>
+          <AgentUserID>Direct Sales Website</AgentUserID>
+          <UserRole>Admin</UserRole>
+        </AgentUser>
+      </TravelAgencySender>
+    </Sender>
+  </Party>
+  <Query>
+        <Passengers>
+            <Passenger ObjectKey="PAX1">
+                <PTC Quantity="1">ADT</PTC>
+                <ResidenceCode>FR</ResidenceCode>
+                <Age>
+                    <BirthDate>1985-09-05</BirthDate>
+                </Age>
+                <Name>
+                    <Surname>John</Surname>
+                    <Given>Doe</Given>
+                    <Middle>N</Middle>
+                </Name>
+                <ProfileID>1096421611391001</ProfileID>
+                <Contacts>
+                    <Contact>
+                        <AddressContact>
+                            <Street>26 Main Street</Street>
+                            <PostalCode>14202</PostalCode>
+                            <CountryCode>DE</CountryCode>
+                        </AddressContact>
+                    </Contact>
+                    <Contact>
+                        <EmailContact>
+                            <Address>web@conztanz.com</Address>
+                        </EmailContact>
+                    </Contact>
+                    <Contact>
+                        <PhoneContact>
+                            <Application>Emergency</Application>
+                            <Number>9869159259</Number>
+                        </PhoneContact>
+                    </Contact>
+                </Contacts>
+            </Passenger>
+      </Passengers>
+    <Order>
+      <OrderID Owner="ZZ">{{ORDER_ID}}</OrderID>
+      <Details>
+        <ShoppingResponse>
+          <Owner>ZZ</Owner>
+          <ResponseID>REa59f2455775c42b397639637265281f4</ResponseID>
+          <OfferID Owner="ZZ">1</OfferID>
+        </ShoppingResponse>
+      </Details>
+      <ActionType>Create</ActionType>
+      <OrderItems>
+        <OrderItem>
+          <OrderItemID Owner="ZZ">2#M#109974565#309974565</OrderItemID>
+          <Associations>
+            <Passengers>
+              <Passenger refs="PAX2">
+                <PTC Quantity="1">CHD</PTC>
+                <Name>
+                  <Surname>Jane</Surname>
+                  <Given>Doe</Given>
+                </Name>
+                <Gender>Female</Gender>
+              </Passenger>
+            </Passengers>
+            <Flight>
+              <OriginDestinationReferences>OD1</OriginDestinationReferences>
+            </Flight>
+          </Associations>
+          <ActionType>Create</ActionType>
+        </OrderItem>
+      </OrderItems>
+    </Order>
+  </Query>
+</OrderChangeRQ>
