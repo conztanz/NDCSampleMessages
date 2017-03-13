@@ -46,20 +46,21 @@
         </Sender>
     </Party>
 	<Query>
-  	<OriginDestination>
+  	    <OriginDestination>
 			<FlightSegmentReference ref="SEG1">
-        <Cabin>
-          <CabinDesignator>Y</CabinDesignator>
-        </Cabin>
-      </FlightSegmentReference>
+                <Cabin>
+                    <CabinDesignator>Y</CabinDesignator>
+                </Cabin>
+            </FlightSegmentReference>
 		</OriginDestination>
-  	<OriginDestination>
+  	    <OriginDestination>
 			<FlightSegmentReference ref="SEG2">
-        <Cabin>
-          <CabinDesignator>Y</CabinDesignator>
-        </Cabin>
-      </FlightSegmentReference>
+                <Cabin>
+                    <CabinDesignator>Y</CabinDesignator>
+                </Cabin>
+            </FlightSegmentReference>
 		</OriginDestination>
+        <OrderID Owner="ZZ">123456</OrderID>
 	</Query>
 	<DataLists>
       <FlightSegmentList>

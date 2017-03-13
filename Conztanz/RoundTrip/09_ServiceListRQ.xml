@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceListRQ xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/EDIST 
+../ServiceListRQ.xsd" EchoToken="8fdb1c621a7a4454aa3360556e778499" Version="16.2" Target="Test" PrimaryLangID="en">
+  <PointOfSale>
+    <Location>
+        <CountryCode>FR</CountryCode>
+        <CityCode>NCE</CityCode>
+    </Location>
+    <RequestTime>2017-03-07T13:11:49</RequestTime>
+    <TouchPoint>
+        <Device>
+            <Code>2</Code>
+            <Definition>Web Browser</Definition>
+            <Position>
+                <Latitude>43.791157</Latitude>
+                <Longitude>7.234303</Longitude>
+                <NAC>HL2K1 Q8XN7</NAC>
+            </Position>
+        </Device>
+        <Event>
+            <Code>1</Code>
+        </Event>
+    </TouchPoint>
+</PointOfSale>
+  <Document>
+    <Name>Conztanz</Name>
+    <ReferenceVersion>1.0</ReferenceVersion>
+  </Document>
+  <Party>
+    <Sender>
+      <TravelAgencySender>
+        <Contacts>
+          <Contact>
+            <EmailContact>
+              <Address>web@conztanz.com</Address>
+            </EmailContact>
+          </Contact>
+        </Contacts>
+        <PseudoCity>A4A</PseudoCity>
+        <IATA_Number>98765432</IATA_Number>
+        <AgencyID Owner="ZZ">ZZ</AgencyID>
+        <AgentUser>
+          <Name>Direct Sales Website</Name>
+          <AgentUserID>Direct Sales Website</AgentUserID>
+          <UserRole>Admin</UserRole>
+        </AgentUser>
+      </TravelAgencySender>
+    </Sender>
+  </Party>
+  <Parameters>
+    <ServiceFilters>
+      <ServiceFilter>
+        <GroupCode>BAG</GroupCode>
+      </ServiceFilter>
+    </ServiceFilters>
+  </Parameters>
+  <Query>
+    <OrderID Owner="ZZ">{{ORDER_ID}}</OrderID>
+  </Query>
+  <JourneyData>
+    <Flight>
+      <Flight>
+        <SegmentKey>SEG1-1</SegmentKey>
+        <Departure>
+          <AirportCode>NCE</AirportCode>
+          <Date>2017-03-22</Date>
+        </Departure>
+        <Arrival>
+          <AirportCode>EXT</AirportCode>
+          <Date>2017-03-22</Date>
+        </Arrival>
+        <MarketingCarrier>
+          <AirlineID>ZZ</AirlineID>
+          <FlightNumber>7689</FlightNumber>
+        </MarketingCarrier>
+      </Flight>
+    </Flight>
+  </JourneyData>
+</ServiceListRQ>

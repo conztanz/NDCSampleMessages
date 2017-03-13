@@ -1,0 +1,139 @@
+<ServiceListRS EchoToken="8fdb1c621a7a4454aa3360556e778499" TimeStamp="2017-03-07T13:11:51" Version="16.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderViewRS.xsd">
+    <Document>
+        <Name>ZZ</Name>
+        <ReferenceVersion>1.0</ReferenceVersion>
+    </Document>
+    <Success/>
+    <ShoppingResponseID>
+        <Owner>ZZ</Owner>
+        <ResponseID>907bfa0e1567adaef09438ba1378b312ac8c9f73</ResponseID>
+    </ShoppingResponseID>
+    <Services>
+        <Service ObjectKey="B01">
+            <ServiceID Owner="ZZ">o-BAG-1-8977565-EB-RP</ServiceID>
+            <Name>1*23kg bagage(s)</Name>
+            <Encoding>
+                <Type>
+                    <Code>BAG</Code>
+                </Type>
+                <Code>XBAG</Code>
+            </Encoding>
+            <Descriptions>
+                <Description>
+                    <Text>1 bag(s), 23kg each</Text>
+                    <Application>Discount 60P</Application>
+                </Description>
+            </Descriptions>
+            <Settlement>
+                <Method>
+                    <Code>AD</Code>
+                    <Definition>Internal Airline Document</Definition>
+                </Method>
+            </Settlement>
+            <Price>
+                <Total>10</Total>
+                <PassengerReferences>PAX1</PassengerReferences>
+            </Price>
+            <Associations>
+                <Traveler>
+                    <TravelerReferences>PAX1</TravelerReferences>
+                </Traveler>
+                <Flight>
+                    <SegmentReferences>SEG1-1</SegmentReferences>
+                </Flight>
+            </Associations>
+        </Service>
+        <Service ObjectKey="B02">
+            <ServiceID Owner="ZZ">o-BAG-1-1402348-QI-TB</ServiceID>
+            <Name>1*23kg bagage(s)</Name>
+            <Encoding>
+                <Type>
+                    <Code>BAG</Code>
+                </Type>
+                <Code>XBAG</Code>
+            </Encoding>
+            <Descriptions>
+                <Description>
+                    <Text>1 bag(s), 23kg each</Text>
+                    <Application>Discount 50P</Application>
+                </Description>
+            </Descriptions>
+            <Settlement>
+                <Method>
+                    <Code>AD</Code>
+                    <Definition>Internal Airline Document</Definition>
+                </Method>
+            </Settlement>
+            <Price>
+                <Total>25</Total>
+                <PassengerReferences>PAX1</PassengerReferences>
+            </Price>
+            <Associations>
+                <Traveler>
+                    <TravelerReferences>PAX1</TravelerReferences>
+                </Traveler>
+                <Flight>
+                    <SegmentReferences>SEG1-1</SegmentReferences>
+                </Flight>
+            </Associations>
+        </Service>
+    </Services>
+    <DataLists>
+        <RecognizedTravelerList>
+            <RecognizedTraveler ObjectKey="PAX1">
+                <Name>
+                    <Surname>John</Surname>
+                    <Given>Smith</Given>
+                </Name>
+                <FQTVs>
+                    <AirlineID>ZZ</AirlineID>
+                    <Account>
+                        <Number>789456126</Number>
+                        <FQTVStatus>PLATINUM</FQTVStatus>
+                    </Account>
+                </FQTVs>
+            </RecognizedTraveler>
+        </RecognizedTravelerList>
+        <FlightSegmentList>
+            <FlightSegment SegmentKey="SEG1-1">
+                <Departure>
+                    <AirportCode>NCE</AirportCode>
+                    <Date>2017-03-22</Date>
+                    <Time>09:15</Time>
+                    <AirportName>Cote D\\'Azur</AirportName>
+                </Departure>
+                <Arrival>
+                    <AirportCode>EXT</AirportCode>
+                    <Date>2017-03-22</Date>
+                    <Time>11:00</Time>
+                    <AirportName>Exeter</AirportName>
+                </Arrival>
+                <MarketingCarrier>
+                    <AirlineID>ZZ</AirlineID>
+                    <Name>Conztanz airline</Name>
+                    <FlightNumber>9883</FlightNumber>
+                </MarketingCarrier>
+                <Equipment>
+                    <AircraftCode>DH8</AircraftCode>
+                    <Name>DHC-8 400</Name>
+                </Equipment>
+                <FlightDetail>
+                    <FlightDuration>
+                        <Value>PT2H45M</Value>
+                    </FlightDuration>
+                </FlightDetail>
+            </FlightSegment>
+        </FlightSegmentList>
+    </DataLists>
+    <Metadata>
+        <Other>
+            <OtherMetadata>
+                <CurrencyMetadatas>
+                    <CurrencyMetadata MetadataKey="EUR">
+                        <Decimals>2</Decimals>
+                    </CurrencyMetadata>
+                </CurrencyMetadatas>
+            </OtherMetadata>
+        </Other>
+    </Metadata>
+</ServiceListRS>

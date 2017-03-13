@@ -1,4 +1,4 @@
-<AirShoppingRS EchoToken="8565b1c621a7a3254aa716085697784d5" TimeStamp="2017-02-17T15:43:52" Version="15.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../AirShoppingRS.xsd">
+<AirShoppingRS EchoToken="8565b1c621a7a3254aa716085697784d5" TimeStamp="2017-02-27T10:38:57" Version="16.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../AirShoppingRS.xsd">
     <Document>
         <Name>CONZTANZ NDC GATEWAY</Name>
         <ReferenceVersion>1.0</ReferenceVersion>
@@ -7,163 +7,28 @@
     <AirShoppingProcessing />
     <ShoppingResponseID>
         <Owner>ZZ</Owner>
-        <ResponseID>RE73a46b48e221653ecd90fb7fc5bc90314000b866</ResponseID>
+        <ResponseID>RE6555e2f0e01108ee7be8f6b6e31cb9944f09f185</ResponseID>
     </ShoppingResponseID>
     <OffersGroup>
         <AirlineOffers>
-            <TotalOfferQuantity>6</TotalOfferQuantity>
+            <TotalOfferQuantity>4</TotalOfferQuantity>
             <Owner>ZZ</Owner>
             <AirlineOffer>
-                <OfferID Owner="ZZ">111-1-19401246-US</OfferID>
+                <OfferID Owner="ZZ">112-1-44406402-EA</OfferID>
                 <TimeLimits>
-                    <OfferExpiration Timestamp="2017-02-17T16:43:52" />
+                    <OfferExpiration Timestamp="2017-02-27T11:38:57" />
                 </TimeLimits>
                 <TotalPrice>
                     <DetailCurrencyPrice>
-                        <Total Code="EUR">120876</Total>
+                        <Total Code="EUR">55690</Total>
                         <Details>
                             <Detail>
-                                <SubTotal Code="EUR">77361</SubTotal>
+                                <SubTotal Code="EUR">35642</SubTotal>
                                 <Application>Base Fare</Application>
                             </Detail>
                         </Details>
                         <Taxes>
-                            <Total Code="EUR">43515</Total>
-                        </Taxes>
-                    </DetailCurrencyPrice>
-                </TotalPrice>
-                <PricedOffer>
-                    <OfferPrice OfferItemID="111-1-1-H">
-                        <RequestedDate>
-                            <PriceDetail>
-                                <TotalAmount>
-                                    <SimpleCurrencyPrice Code="EUR">120876</SimpleCurrencyPrice>
-                                </TotalAmount>
-                                <BaseAmount Code="EUR">77361</BaseAmount>
-                                <Taxes>
-                                    <Total Code="EUR">43515</Total>
-                                </Taxes>
-                            </PriceDetail>
-                            <Associations>
-                                <AssociatedTraveler>
-                                    <TravelerReferences>SH1</TravelerReferences>
-                                </AssociatedTraveler>
-                            </Associations>
-                        </RequestedDate>
-                    </OfferPrice>
-                    <Associations>
-                        <ApplicableFlight>
-                            <FlightSegmentReference ref="SEG1-1">
-                                <ClassOfService>
-                                    <Code SeatsLeft="4">Y</Code>
-                                </ClassOfService>
-                            </FlightSegmentReference>
-                            <FlightSegmentReference ref="SEG2-1">
-                                <ClassOfService>
-                                    <Code SeatsLeft="4">Y</Code>
-                                </ClassOfService>
-                            </FlightSegmentReference>
-                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
-                            <FlightReferences>FL1-1 FL2-1</FlightReferences>
-                        </ApplicableFlight>
-                        <PriceClass>
-                            <PriceClassReference>PC1</PriceClassReference>
-                        </PriceClass>
-                        <IncludedService>
-                            <ServiceReferences>SV2 SV4 SV6</ServiceReferences>
-                        </IncludedService>
-                        <AssociatedService>
-                            <ServiceReferences>SV7</ServiceReferences>
-                        </AssociatedService>
-                    </Associations>
-                </PricedOffer>
-            </AirlineOffer>
-            <AirlineOffer>
-                <OfferID Owner="ZZ">111-1-25465630-HW</OfferID>
-                <TimeLimits>
-                    <OfferExpiration Timestamp="2017-02-17T16:43:52" />
-                </TimeLimits>
-                <TotalPrice>
-                    <DetailCurrencyPrice>
-                        <Total Code="EUR">98626</Total>
-                        <Details>
-                            <Detail>
-                                <SubTotal Code="EUR">63121</SubTotal>
-                                <Application>Base Fare</Application>
-                            </Detail>
-                        </Details>
-                        <Taxes>
-                            <Total Code="EUR">35505</Total>
-                        </Taxes>
-                    </DetailCurrencyPrice>
-                </TotalPrice>
-                <PricedOffer>
-                    <OfferPrice OfferItemID="111-1-2-H">
-                        <RequestedDate>
-                            <PriceDetail>
-                                <TotalAmount>
-                                    <SimpleCurrencyPrice Code="EUR">98626</SimpleCurrencyPrice>
-                                </TotalAmount>
-                                <BaseAmount Code="EUR">63121</BaseAmount>
-                                <Taxes>
-                                    <Total Code="EUR">35505</Total>
-                                </Taxes>
-                            </PriceDetail>
-                            <Associations>
-                                <AssociatedTraveler>
-                                    <TravelerReferences>SH1</TravelerReferences>
-                                </AssociatedTraveler>
-                            </Associations>
-                        </RequestedDate>
-                    </OfferPrice>
-                    <Associations>
-                        <ApplicableFlight>
-                            <FlightSegmentReference ref="SEG1-1">
-                                <ClassOfService>
-                                    <Code SeatsLeft="8">Y</Code>
-                                </ClassOfService>
-                            </FlightSegmentReference>
-                            <FlightSegmentReference ref="SEG3-1">
-                                <ClassOfService>
-                                    <Code SeatsLeft="8">Y</Code>
-                                </ClassOfService>
-                            </FlightSegmentReference>
-                            <FlightSegmentReference ref="SEG6-1">
-                                <ClassOfService>
-                                    <Code SeatsLeft="8">Y</Code>
-                                </ClassOfService>
-                            </FlightSegmentReference>
-                            <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
-                            <FlightReferences>FL1-1 FL3-1 FL6-1</FlightReferences>
-                        </ApplicableFlight>
-                        <PriceClass>
-                            <PriceClassReference>PC1</PriceClassReference>
-                        </PriceClass>
-                        <IncludedService>
-                            <ServiceReferences>SV2 SV4 SV6 SV3</ServiceReferences>
-                        </IncludedService>
-                        <AssociatedService>
-                            <ServiceReferences>SV7</ServiceReferences>
-                        </AssociatedService>
-                    </Associations>
-                </PricedOffer>
-            </AirlineOffer>
-            <AirlineOffer>
-                <OfferID Owner="ZZ">112-1-48741563-TQ</OfferID>
-                <TimeLimits>
-                    <OfferExpiration Timestamp="2017-02-17T16:43:52" />
-                </TimeLimits>
-                <TotalPrice>
-                    <DetailCurrencyPrice>
-                        <Total Code="EUR">55952</Total>
-                        <Details>
-                            <Detail>
-                                <SubTotal Code="EUR">35809</SubTotal>
-                                <Application>Base Fare</Application>
-                            </Detail>
-                        </Details>
-                        <Taxes>
-                            <Total Code="EUR">20143</Total>
+                            <Total Code="EUR">20048</Total>
                         </Taxes>
                     </DetailCurrencyPrice>
                 </TotalPrice>
@@ -214,15 +79,15 @@
                     </Details>
                 </Penalty>
                 <PricedOffer>
-                    <OfferPrice OfferItemID="112-1-4-D">
+                    <OfferPrice OfferItemID="112-1-4-M">
                         <RequestedDate>
                             <PriceDetail>
                                 <TotalAmount>
-                                    <SimpleCurrencyPrice Code="EUR">55952</SimpleCurrencyPrice>
+                                    <SimpleCurrencyPrice Code="EUR">55690</SimpleCurrencyPrice>
                                 </TotalAmount>
-                                <BaseAmount Code="EUR">35809</BaseAmount>
+                                <BaseAmount Code="EUR">35642</BaseAmount>
                                 <Taxes>
-                                    <Total Code="EUR">20143</Total>
+                                    <Total Code="EUR">20048</Total>
                                 </Taxes>
                             </PriceDetail>
                             <Associations>
@@ -236,12 +101,12 @@
                         <ApplicableFlight>
                             <FlightSegmentReference ref="SEG1-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="5">N</Code>
+                                    <Code SeatsLeft="8">N</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <FlightSegmentReference ref="SEG2-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="5">N</Code>
+                                    <Code SeatsLeft="8">N</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
@@ -260,34 +125,34 @@
                 </PricedOffer>
             </AirlineOffer>
             <AirlineOffer>
-                <OfferID Owner="ZZ">113-1-18698706-KH</OfferID>
+                <OfferID Owner="ZZ">113-1-10832041-VE</OfferID>
                 <TimeLimits>
-                    <OfferExpiration Timestamp="2017-02-17T16:43:52" />
+                    <OfferExpiration Timestamp="2017-02-27T11:38:57" />
                 </TimeLimits>
                 <TotalPrice>
                     <DetailCurrencyPrice>
-                        <Total Code="EUR">106238</Total>
+                        <Total Code="EUR">104859</Total>
                         <Details>
                             <Detail>
-                                <SubTotal Code="EUR">67992</SubTotal>
+                                <SubTotal Code="EUR">67110</SubTotal>
                                 <Application>Base Fare</Application>
                             </Detail>
                         </Details>
                         <Taxes>
-                            <Total Code="EUR">38246</Total>
+                            <Total Code="EUR">37749</Total>
                         </Taxes>
                     </DetailCurrencyPrice>
                 </TotalPrice>
                 <PricedOffer>
-                    <OfferPrice OfferItemID="113-1-1-W">
+                    <OfferPrice OfferItemID="113-1-1-K">
                         <RequestedDate>
                             <PriceDetail>
                                 <TotalAmount>
-                                    <SimpleCurrencyPrice Code="EUR">106238</SimpleCurrencyPrice>
+                                    <SimpleCurrencyPrice Code="EUR">104859</SimpleCurrencyPrice>
                                 </TotalAmount>
-                                <BaseAmount Code="EUR">67992</BaseAmount>
+                                <BaseAmount Code="EUR">67110</BaseAmount>
                                 <Taxes>
-                                    <Total Code="EUR">38246</Total>
+                                    <Total Code="EUR">37749</Total>
                                 </Taxes>
                             </PriceDetail>
                             <Associations>
@@ -301,17 +166,17 @@
                         <ApplicableFlight>
                             <FlightSegmentReference ref="SEG4-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="5">Y</Code>
+                                    <Code SeatsLeft="8">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <FlightSegmentReference ref="SEG5-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="5">Y</Code>
+                                    <Code SeatsLeft="8">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <FlightSegmentReference ref="SEG2-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="5">Y</Code>
+                                    <Code SeatsLeft="8">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
@@ -330,34 +195,34 @@
                 </PricedOffer>
             </AirlineOffer>
             <AirlineOffer>
-                <OfferID Owner="ZZ">113-1-20056113-DY</OfferID>
+                <OfferID Owner="ZZ">113-1-29538820-RG</OfferID>
                 <TimeLimits>
-                    <OfferExpiration Timestamp="2017-02-17T16:43:52" />
+                    <OfferExpiration Timestamp="2017-02-27T11:38:57" />
                 </TimeLimits>
                 <TotalPrice>
                     <DetailCurrencyPrice>
-                        <Total Code="EUR">82742</Total>
+                        <Total Code="EUR">86045</Total>
                         <Details>
                             <Detail>
-                                <SubTotal Code="EUR">52955</SubTotal>
+                                <SubTotal Code="EUR">55069</SubTotal>
                                 <Application>Base Fare</Application>
                             </Detail>
                         </Details>
                         <Taxes>
-                            <Total Code="EUR">29787</Total>
+                            <Total Code="EUR">30976</Total>
                         </Taxes>
                     </DetailCurrencyPrice>
                 </TotalPrice>
                 <PricedOffer>
-                    <OfferPrice OfferItemID="113-1-2-B">
+                    <OfferPrice OfferItemID="113-1-2-V">
                         <RequestedDate>
                             <PriceDetail>
                                 <TotalAmount>
-                                    <SimpleCurrencyPrice Code="EUR">82742</SimpleCurrencyPrice>
+                                    <SimpleCurrencyPrice Code="EUR">86045</SimpleCurrencyPrice>
                                 </TotalAmount>
-                                <BaseAmount Code="EUR">52955</BaseAmount>
+                                <BaseAmount Code="EUR">55069</BaseAmount>
                                 <Taxes>
-                                    <Total Code="EUR">29787</Total>
+                                    <Total Code="EUR">30976</Total>
                                 </Taxes>
                             </PriceDetail>
                             <Associations>
@@ -371,22 +236,22 @@
                         <ApplicableFlight>
                             <FlightSegmentReference ref="SEG4-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="4">Y</Code>
+                                    <Code SeatsLeft="5">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <FlightSegmentReference ref="SEG5-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="4">Y</Code>
+                                    <Code SeatsLeft="5">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <FlightSegmentReference ref="SEG3-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="4">Y</Code>
+                                    <Code SeatsLeft="5">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <FlightSegmentReference ref="SEG6-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="4">Y</Code>
+                                    <Code SeatsLeft="5">Y</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
@@ -405,21 +270,21 @@
                 </PricedOffer>
             </AirlineOffer>
             <AirlineOffer>
-                <OfferID Owner="ZZ">114-1-36541737-FV</OfferID>
+                <OfferID Owner="ZZ">114-1-35075629-OB</OfferID>
                 <TimeLimits>
-                    <OfferExpiration Timestamp="2017-02-17T16:43:52" />
+                    <OfferExpiration Timestamp="2017-02-27T11:38:57" />
                 </TimeLimits>
                 <TotalPrice>
                     <DetailCurrencyPrice>
-                        <Total Code="EUR">35572</Total>
+                        <Total Code="EUR">34378</Total>
                         <Details>
                             <Detail>
-                                <SubTotal Code="EUR">22766</SubTotal>
+                                <SubTotal Code="EUR">22002</SubTotal>
                                 <Application>Base Fare</Application>
                             </Detail>
                         </Details>
                         <Taxes>
-                            <Total Code="EUR">12806</Total>
+                            <Total Code="EUR">12376</Total>
                         </Taxes>
                     </DetailCurrencyPrice>
                 </TotalPrice>
@@ -470,15 +335,15 @@
                     </Details>
                 </Penalty>
                 <PricedOffer>
-                    <OfferPrice OfferItemID="114-1-3-R">
+                    <OfferPrice OfferItemID="114-1-3-O">
                         <RequestedDate>
                             <PriceDetail>
                                 <TotalAmount>
-                                    <SimpleCurrencyPrice Code="EUR">35572</SimpleCurrencyPrice>
+                                    <SimpleCurrencyPrice Code="EUR">34378</SimpleCurrencyPrice>
                                 </TotalAmount>
-                                <BaseAmount Code="EUR">22766</BaseAmount>
+                                <BaseAmount Code="EUR">22002</BaseAmount>
                                 <Taxes>
-                                    <Total Code="EUR">12806</Total>
+                                    <Total Code="EUR">12376</Total>
                                 </Taxes>
                             </PriceDetail>
                             <Associations>
@@ -492,22 +357,22 @@
                         <ApplicableFlight>
                             <FlightSegmentReference ref="SEG4-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="4">M</Code>
+                                    <Code SeatsLeft="2">M</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <FlightSegmentReference ref="SEG5-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="4">M</Code>
+                                    <Code SeatsLeft="2">M</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <FlightSegmentReference ref="SEG3-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="4">M</Code>
+                                    <Code SeatsLeft="2">M</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <FlightSegmentReference ref="SEG6-1">
                                 <ClassOfService>
-                                    <Code SeatsLeft="4">M</Code>
+                                    <Code SeatsLeft="2">M</Code>
                                 </ClassOfService>
                             </FlightSegmentReference>
                             <OriginDestinationReferences>OD1 OD2</OriginDestinationReferences>
@@ -527,43 +392,43 @@
             </AirlineOffer>
             <PriceCalendar LeadPriceInd="true">
                 <PriceCalendarDate OriginDestinationReference="OD1">2017-03-22</PriceCalendarDate>
-                <TotalPrice Code="EUR">17786</TotalPrice>
+                <TotalPrice Code="EUR">17189</TotalPrice>
             </PriceCalendar>
             <PriceCalendar LeadPriceInd="false">
                 <PriceCalendarDate OriginDestinationReference="OD1">2017-03-20</PriceCalendarDate>
-                <TotalPrice Code="EUR">14960</TotalPrice>
+                <TotalPrice Code="EUR">21240</TotalPrice>
             </PriceCalendar>
             <PriceCalendar LeadPriceInd="false">
                 <PriceCalendarDate OriginDestinationReference="OD1">2017-03-21</PriceCalendarDate>
-                <TotalPrice Code="EUR">19673</TotalPrice>
+                <TotalPrice Code="EUR">19385</TotalPrice>
             </PriceCalendar>
             <PriceCalendar LeadPriceInd="false">
                 <PriceCalendarDate OriginDestinationReference="OD1">2017-03-23</PriceCalendarDate>
-                <TotalPrice Code="EUR">21932</TotalPrice>
+                <TotalPrice Code="EUR">19612</TotalPrice>
             </PriceCalendar>
             <PriceCalendar LeadPriceInd="false">
                 <PriceCalendarDate OriginDestinationReference="OD1">2017-03-24</PriceCalendarDate>
-                <TotalPrice Code="EUR">19190</TotalPrice>
+                <TotalPrice Code="EUR">19572</TotalPrice>
             </PriceCalendar>
             <PriceCalendar LeadPriceInd="true">
                 <PriceCalendarDate OriginDestinationReference="OD2">2017-03-28</PriceCalendarDate>
-                <TotalPrice Code="EUR">17786</TotalPrice>
+                <TotalPrice Code="EUR">17189</TotalPrice>
             </PriceCalendar>
             <PriceCalendar LeadPriceInd="false">
                 <PriceCalendarDate OriginDestinationReference="OD2">2017-03-26</PriceCalendarDate>
-                <TotalPrice Code="EUR">14587</TotalPrice>
+                <TotalPrice Code="EUR">19049</TotalPrice>
             </PriceCalendar>
             <PriceCalendar LeadPriceInd="false">
                 <PriceCalendarDate OriginDestinationReference="OD2">2017-03-27</PriceCalendarDate>
-                <TotalPrice Code="EUR">19215</TotalPrice>
+                <TotalPrice Code="EUR">17750</TotalPrice>
             </PriceCalendar>
             <PriceCalendar LeadPriceInd="false">
                 <PriceCalendarDate OriginDestinationReference="OD2">2017-03-29</PriceCalendarDate>
-                <TotalPrice Code="EUR">21300</TotalPrice>
+                <TotalPrice Code="EUR">17016</TotalPrice>
             </PriceCalendar>
             <PriceCalendar LeadPriceInd="false">
                 <PriceCalendarDate OriginDestinationReference="OD2">2017-03-30</PriceCalendarDate>
-                <TotalPrice Code="EUR">21744</TotalPrice>
+                <TotalPrice Code="EUR">13186</TotalPrice>
             </PriceCalendar>
         </AirlineOffers>
     </OffersGroup>
@@ -590,7 +455,7 @@
                 <MarketingCarrier>
                     <AirlineID>ZZ</AirlineID>
                     <Name>Conztanz airline</Name>
-                    <FlightNumber>1520</FlightNumber>
+                    <FlightNumber>2213</FlightNumber>
                 </MarketingCarrier>
                 <Equipment>
                     <AircraftCode>DH8</AircraftCode>
@@ -610,15 +475,15 @@
                     <AirportName>Cote D\\'Azur</AirportName>
                 </Departure>
                 <Arrival>
-                    <AirportCode>BIA</AirportCode>
+                    <AirportCode>DOL</AirportCode>
                     <Date>2017-03-22</Date>
                     <Time>12:50</Time>
-                    <AirportName>Poretta</AirportName>
+                    <AirportName>St Gatien</AirportName>
                 </Arrival>
                 <MarketingCarrier>
                     <AirlineID>YY</AirlineID>
                     <Name>Wild cat airline</Name>
-                    <FlightNumber>9732</FlightNumber>
+                    <FlightNumber>902</FlightNumber>
                 </MarketingCarrier>
                 <Equipment>
                     <AircraftCode>737</AircraftCode>
@@ -632,10 +497,10 @@
             </FlightSegment>
             <FlightSegment SegmentKey="SEG5-1">
                 <Departure>
-                    <AirportCode>BIA</AirportCode>
+                    <AirportCode>DOL</AirportCode>
                     <Date>2017-03-22</Date>
                     <Time>14:20</Time>
-                    <AirportName>Poretta</AirportName>
+                    <AirportName>St Gatien</AirportName>
                 </Departure>
                 <Arrival>
                     <AirportCode>EXT</AirportCode>
@@ -646,12 +511,12 @@
                 <MarketingCarrier>
                     <AirlineID>ZZ</AirlineID>
                     <Name>Conztanz airline</Name>
-                    <FlightNumber>907</FlightNumber>
+                    <FlightNumber>1769</FlightNumber>
                 </MarketingCarrier>
                 <OperatingCarrier>
                     <AirlineID>YY</AirlineID>
                     <Name>Wild cat airline</Name>
-                    <FlightNumber>7294</FlightNumber>
+                    <FlightNumber>2963</FlightNumber>
                 </OperatingCarrier>
                 <Equipment>
                     <AircraftCode>737</AircraftCode>
@@ -679,7 +544,7 @@
                 <MarketingCarrier>
                     <AirlineID>ZZ</AirlineID>
                     <Name>Conztanz airline</Name>
-                    <FlightNumber>126</FlightNumber>
+                    <FlightNumber>2111</FlightNumber>
                 </MarketingCarrier>
                 <Equipment>
                     <AircraftCode>DH8</AircraftCode>
@@ -693,10 +558,10 @@
             </FlightSegment>
             <FlightSegment SegmentKey="SEG6-1">
                 <Departure>
-                    <AirportCode>DCM</AirportCode>
+                    <AirportCode>XCD</AirportCode>
                     <Date>2017-03-28</Date>
                     <Time>15:15</Time>
-                    <AirportName>Mazamet</AirportName>
+                    <AirportName>Champforgeuil</AirportName>
                 </Departure>
                 <Arrival>
                     <AirportCode>NCE</AirportCode>
@@ -707,7 +572,7 @@
                 <MarketingCarrier>
                     <AirlineID>ZZ</AirlineID>
                     <Name>Conztanz airline</Name>
-                    <FlightNumber>7953</FlightNumber>
+                    <FlightNumber>3194</FlightNumber>
                 </MarketingCarrier>
                 <Equipment>
                     <AircraftCode>DH8</AircraftCode>
@@ -727,15 +592,15 @@
                     <AirportName>Exeter</AirportName>
                 </Departure>
                 <Arrival>
-                    <AirportCode>DCM</AirportCode>
+                    <AirportCode>XCD</AirportCode>
                     <Date>2017-03-28</Date>
                     <Time>14:45</Time>
-                    <AirportName>Mazamet</AirportName>
+                    <AirportName>Champforgeuil</AirportName>
                 </Arrival>
                 <MarketingCarrier>
                     <AirlineID>YY</AirlineID>
                     <Name>Wild cat airline</Name>
-                    <FlightNumber>759</FlightNumber>
+                    <FlightNumber>6493</FlightNumber>
                 </MarketingCarrier>
                 <Equipment>
                     <AircraftCode>737</AircraftCode>
@@ -835,7 +700,7 @@
         </PriceClassList>
         <ServiceList>
             <Service ObjectKey="SV1">
-                <ServiceID Owner="ZZ">BAG0009</ServiceID>
+                <ServiceID Owner="ZZ">BAG0001</ServiceID>
                 <Name>1*23kg bagages</Name>
                 <Encoding />
                 <Descriptions>
@@ -863,7 +728,7 @@
                 </Associations>
             </Service>
             <Service ObjectKey="SV2">
-                <ServiceID Owner="ZZ">BAG0010</ServiceID>
+                <ServiceID Owner="ZZ">BAG0002</ServiceID>
                 <Name>2*23kg bagages</Name>
                 <Encoding />
                 <Descriptions>
@@ -891,7 +756,7 @@
                 </Associations>
             </Service>
             <Service ObjectKey="SV3">
-                <ServiceID Owner="ZZ">LA0011</ServiceID>
+                <ServiceID Owner="ZZ">LA0003</ServiceID>
                 <Name>Lounge access at connection</Name>
                 <Encoding />
                 <Descriptions>
@@ -919,7 +784,7 @@
                 </Associations>
             </Service>
             <Service ObjectKey="SV4">
-                <ServiceID Owner="ZZ">FF0012</ServiceID>
+                <ServiceID Owner="ZZ">FF0004</ServiceID>
                 <Name>10000 miles</Name>
                 <Encoding />
                 <Descriptions>
@@ -947,7 +812,7 @@
                 </Associations>
             </Service>
             <Service ObjectKey="SV5">
-                <ServiceID Owner="ZZ">FF0013</ServiceID>
+                <ServiceID Owner="ZZ">FF0005</ServiceID>
                 <Name>5000 miles</Name>
                 <Encoding />
                 <Descriptions>
@@ -975,7 +840,7 @@
                 </Associations>
             </Service>
             <Service ObjectKey="SV6">
-                <ServiceID Owner="ZZ">FT0014</ServiceID>
+                <ServiceID Owner="ZZ">FT0006</ServiceID>
                 <Name>Fasttrack</Name>
                 <Encoding />
                 <Descriptions>
@@ -1003,7 +868,7 @@
                 </Associations>
             </Service>
             <Service ObjectKey="SV7">
-                <ServiceID Owner="YY">WI0015</ServiceID>
+                <ServiceID Owner="YY">WI0007</ServiceID>
                 <Name>Wifi</Name>
                 <Encoding />
                 <Descriptions>
@@ -1031,7 +896,7 @@
                 </Associations>
             </Service>
             <Service ObjectKey="SV8">
-                <ServiceID Owner="YY">WI0016</ServiceID>
+                <ServiceID Owner="YY">WI0008</ServiceID>
                 <Name>Wifi</Name>
                 <Encoding />
                 <Descriptions>

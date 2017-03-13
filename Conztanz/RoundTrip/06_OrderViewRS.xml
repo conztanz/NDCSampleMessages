@@ -1,4 +1,4 @@
-<OrderViewRS EchoToken="4caead6c28872f069c8f4c75a023048073b2cc9f" TimeStamp="2017-02-17T15:45:41" Version="15.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderViewRS.xsd">
+<OrderViewRS EchoToken="6a158af598a89c744bded2bf215573b3f884a8fc" TimeStamp="2017-02-27T10:39:32" Version="16.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderViewRS.xsd">
     <Document>
         <Name>ZZ</Name>
         <ReferenceVersion>1.0</ReferenceVersion>
@@ -63,24 +63,24 @@
             </Passenger>
         </Passengers>
         <Order>
-            <OrderID Owner="ZZ">0BBU2F</OrderID>
+            <OrderID Owner="ZZ">MY6DOW</OrderID>
             <BookingReferences>
                 <BookingReference>
-                    <ID>QU5TRG</ID>
+                    <ID>T7LWQW</ID>
                     <AirlineID>ZZ</AirlineID>
                 </BookingReference>
             </BookingReferences>
             <TotalOrderPrice>
                 <DetailCurrencyPrice>
-                    <Total Code="EUR">120876</Total>
+                    <Total Code="EUR">125236</Total>
                     <Taxes>
-                        <Total Code="EUR">43515</Total>
+                        <Total Code="EUR">45085</Total>
                     </Taxes>
                 </DetailCurrencyPrice>
             </TotalOrderPrice>
             <OrderItems>
                 <OrderItem>
-                    <OrderItemID Owner="ZZ">1#M#664783373#136871039</OrderItemID>
+                    <OrderItemID Owner="ZZ">7#M#604768560#3767037</OrderItemID>
                     <FlightItem>
                         <OriginDestination>
                             <Flight refs="SEG1-1">
@@ -94,7 +94,7 @@
                                 <MarketingCarrier>
                                     <AirlineID>ZZ</AirlineID>
                                     <Name>Conztanz airline</Name>
-                                    <FlightNumber>1520</FlightNumber>
+                                    <FlightNumber>2015</FlightNumber>
                                 </MarketingCarrier>
                             </Flight>
                             <Flight refs="SEG2-1">
@@ -108,7 +108,7 @@
                                 <MarketingCarrier>
                                     <AirlineID>ZZ</AirlineID>
                                     <Name>Conztanz airline</Name>
-                                    <FlightNumber>126</FlightNumber>
+                                    <FlightNumber>9899</FlightNumber>
                                 </MarketingCarrier>
                             </Flight>
                         </OriginDestination>
@@ -143,7 +143,7 @@
                     <MarketingCarrier>
                         <AirlineID>ZZ</AirlineID>
                         <Name>Conztanz airline</Name>
-                        <FlightNumber>1520</FlightNumber>
+                        <FlightNumber>2015</FlightNumber>
                     </MarketingCarrier>
                     <Equipment>
                         <AircraftCode>DH8</AircraftCode>
@@ -171,7 +171,7 @@
                     <MarketingCarrier>
                         <AirlineID>ZZ</AirlineID>
                         <Name>Conztanz airline</Name>
-                        <FlightNumber>126</FlightNumber>
+                        <FlightNumber>9899</FlightNumber>
                     </MarketingCarrier>
                     <Equipment>
                         <AircraftCode>DH8</AircraftCode>
@@ -225,7 +225,7 @@
             </PriceClassList>
             <ServiceList>
                 <Service ObjectKey="SV2">
-                    <ServiceID Owner="ZZ">0020</ServiceID>
+                    <ServiceID Owner="ZZ">0012</ServiceID>
                     <Name>2*23kg bagages</Name>
                     <Encoding />
                     <Descriptions>
@@ -241,19 +241,15 @@
                     </Settlement>
                     <Price>
                         <Total>0</Total>
-                        <PassengerReferences></PassengerReferences>
                     </Price>
                     <Associations>
-                        <Traveler>
-                            <TravelerReferences></TravelerReferences>
-                        </Traveler>
                         <Flight>
                             <SegmentReferences>SEG1-1 SEG2-1</SegmentReferences>
                         </Flight>
                     </Associations>
                 </Service>
                 <Service ObjectKey="SV4">
-                    <ServiceID Owner="ZZ">0021</ServiceID>
+                    <ServiceID Owner="ZZ">0013</ServiceID>
                     <Name>10000 miles</Name>
                     <Encoding />
                     <Descriptions>
@@ -269,19 +265,15 @@
                     </Settlement>
                     <Price>
                         <Total>0</Total>
-                        <PassengerReferences></PassengerReferences>
                     </Price>
                     <Associations>
-                        <Traveler>
-                            <TravelerReferences></TravelerReferences>
-                        </Traveler>
                         <Flight>
                             <SegmentReferences>SEG1-1 SEG2-1</SegmentReferences>
                         </Flight>
                     </Associations>
                 </Service>
                 <Service ObjectKey="SV6">
-                    <ServiceID Owner="ZZ">0022</ServiceID>
+                    <ServiceID Owner="ZZ">0014</ServiceID>
                     <Name>Fasttrack</Name>
                     <Encoding />
                     <Descriptions>
@@ -297,12 +289,8 @@
                     </Settlement>
                     <Price>
                         <Total>0</Total>
-                        <PassengerReferences></PassengerReferences>
                     </Price>
                     <Associations>
-                        <Traveler>
-                            <TravelerReferences></TravelerReferences>
-                        </Traveler>
                         <Flight>
                             <SegmentReferences>SEG1-1 SEG2-1</SegmentReferences>
                         </Flight>
