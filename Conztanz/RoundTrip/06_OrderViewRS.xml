@@ -1,6 +1,6 @@
-<OrderViewRS EchoToken="6a158af598a89c744bded2bf215573b3f884a8fc" TimeStamp="2017-02-27T10:39:32" Version="16.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderViewRS.xsd">
+<OrderViewRS EchoToken="a3360c66e7784d21a7a4454a5558fdb1" TimeStamp="2017-03-22T13:20:22" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderViewRS.xsd">
     <Document>
-        <Name>ZZ</Name>
+        <Name>CONZTANZ NDC GATEWAY</Name>
         <ReferenceVersion>1.0</ReferenceVersion>
     </Document>
     <Party>
@@ -37,9 +37,10 @@
                     <BirthDate>1985-09-05</BirthDate>
                 </Age>
                 <Name>
-                    <Surname>John</Surname>
-                    <Given>Smith</Given>
+                    <Surname>Smith</Surname>
+                    <Given>John</Given>
                 </Name>
+                <ProfileID>1234567890</ProfileID>
                 <Contacts>
                     <Contact>
                         <AddressContact>
@@ -60,56 +61,95 @@
                         </PhoneContact>
                     </Contact>
                 </Contacts>
+                <FQTVs>
+                    <TravelerFQTV_Information>
+                        <AirlineID>ZZ</AirlineID>
+                        <Account>
+                            <Number>789456126</Number>
+                            <FQTVStatus>PLATINUM</FQTVStatus>
+                        </Account>
+                    </TravelerFQTV_Information>
+                </FQTVs>
             </Passenger>
         </Passengers>
         <Order>
-            <OrderID Owner="ZZ">MY6DOW</OrderID>
+            <OrderID Owner="ZZ">AAE3C5</OrderID>
             <BookingReferences>
                 <BookingReference>
-                    <ID>T7LWQW</ID>
+                    <ID>ZTX1SK</ID>
                     <AirlineID>ZZ</AirlineID>
                 </BookingReference>
             </BookingReferences>
             <TotalOrderPrice>
                 <DetailCurrencyPrice>
-                    <Total Code="EUR">125236</Total>
+                    <Total Code="EUR">122135</Total>
                     <Taxes>
-                        <Total Code="EUR">45085</Total>
+                        <Total Code="EUR">43969</Total>
                     </Taxes>
                 </DetailCurrencyPrice>
             </TotalOrderPrice>
             <OrderItems>
                 <OrderItem>
-                    <OrderItemID Owner="ZZ">7#M#604768560#3767037</OrderItemID>
+                    <OrderItemID Owner="ZZ">8#M#8111953#410227272</OrderItemID>
                     <FlightItem>
                         <OriginDestination>
-                            <Flight refs="SEG1-1">
+                            <Flight>
+                                <SegmentKey>SEG1-1</SegmentKey>
                                 <Departure>
                                     <AirportCode>NCE</AirportCode>
                                     <Date>2017-03-22</Date>
+                                    <Time>09:15</Time>
+                                    <AirportName>Cote D\\'Azur</AirportName>
                                 </Departure>
                                 <Arrival>
                                     <AirportCode>EXT</AirportCode>
+                                    <Date>2017-03-22</Date>
+                                    <Time>11:00</Time>
+                                    <AirportName>Exeter</AirportName>
                                 </Arrival>
                                 <MarketingCarrier>
                                     <AirlineID>ZZ</AirlineID>
                                     <Name>Conztanz airline</Name>
-                                    <FlightNumber>2015</FlightNumber>
+                                    <FlightNumber>9883</FlightNumber>
                                 </MarketingCarrier>
+                                <Equipment>
+                                    <AircraftCode>DH8</AircraftCode>
+                                    <Name>DHC-8 400</Name>
+                                </Equipment>
+                                <Details>
+                                    <FlightDuration>
+                                        <Value>PT2H45M</Value>
+                                    </FlightDuration>
+                                </Details>
                             </Flight>
-                            <Flight refs="SEG2-1">
+                            <Flight>
+                                <SegmentKey>SEG2-1</SegmentKey>
                                 <Departure>
                                     <AirportCode>EXT</AirportCode>
                                     <Date>2017-03-28</Date>
+                                    <Time>11:50</Time>
+                                    <AirportName>Exeter</AirportName>
                                 </Departure>
                                 <Arrival>
                                     <AirportCode>NCE</AirportCode>
+                                    <Date>2017-03-28</Date>
+                                    <Time>14:45</Time>
+                                    <AirportName>Cote D\\'Azur</AirportName>
                                 </Arrival>
                                 <MarketingCarrier>
                                     <AirlineID>ZZ</AirlineID>
                                     <Name>Conztanz airline</Name>
-                                    <FlightNumber>9899</FlightNumber>
+                                    <FlightNumber>9574</FlightNumber>
                                 </MarketingCarrier>
+                                <Equipment>
+                                    <AircraftCode>DH8</AircraftCode>
+                                    <Name>DHC-8 400</Name>
+                                </Equipment>
+                                <Details>
+                                    <FlightDuration>
+                                        <Value>PT1H55M</Value>
+                                    </FlightDuration>
+                                </Details>
                             </Flight>
                         </OriginDestination>
                     </FlightItem>
@@ -118,7 +158,7 @@
                             <PassengerReferences>PAX1</PassengerReferences>
                         </Passengers>
                         <IncludedService>
-                            <ServiceReferences>SV2 SV4 SV6 </ServiceReferences>
+                            <ServiceReferences>SV1 SV4 SV6</ServiceReferences>
                         </IncludedService>
                         <OtherAssociation Type="PriceClass" ReferenceValue="PC1"></OtherAssociation>
                     </Associations>
@@ -126,90 +166,6 @@
             </OrderItems>
         </Order>
         <DataLists>
-            <FlightSegmentList>
-                <FlightSegment SegmentKey="SEG1-1">
-                    <Departure>
-                        <AirportCode>NCE</AirportCode>
-                        <Date>2017-03-22</Date>
-                        <Time>09:15</Time>
-                        <AirportName>Cote D\\'Azur</AirportName>
-                    </Departure>
-                    <Arrival>
-                        <AirportCode>EXT</AirportCode>
-                        <Date>2017-03-22</Date>
-                        <Time>11:00</Time>
-                        <AirportName>Exeter</AirportName>
-                    </Arrival>
-                    <MarketingCarrier>
-                        <AirlineID>ZZ</AirlineID>
-                        <Name>Conztanz airline</Name>
-                        <FlightNumber>2015</FlightNumber>
-                    </MarketingCarrier>
-                    <Equipment>
-                        <AircraftCode>DH8</AircraftCode>
-                        <Name>DHC-8 400</Name>
-                    </Equipment>
-                    <FlightDetail>
-                        <FlightDuration>
-                            <Value>PT2H45M</Value>
-                        </FlightDuration>
-                    </FlightDetail>
-                </FlightSegment>
-                <FlightSegment SegmentKey="SEG2-1">
-                    <Departure>
-                        <AirportCode>EXT</AirportCode>
-                        <Date>2017-03-28</Date>
-                        <Time>11:50</Time>
-                        <AirportName>Exeter</AirportName>
-                    </Departure>
-                    <Arrival>
-                        <AirportCode>NCE</AirportCode>
-                        <Date>2017-03-28</Date>
-                        <Time>14:45</Time>
-                        <AirportName>Cote D\\'Azur</AirportName>
-                    </Arrival>
-                    <MarketingCarrier>
-                        <AirlineID>ZZ</AirlineID>
-                        <Name>Conztanz airline</Name>
-                        <FlightNumber>9899</FlightNumber>
-                    </MarketingCarrier>
-                    <Equipment>
-                        <AircraftCode>DH8</AircraftCode>
-                        <Name>DHC-8 400</Name>
-                    </Equipment>
-                    <FlightDetail>
-                        <FlightDuration>
-                            <Value>PT1H55M</Value>
-                        </FlightDuration>
-                    </FlightDetail>
-                </FlightSegment>
-            </FlightSegmentList>
-            <FlightList>
-                <Flight FlightKey="FL1-1">
-                    <Journey>
-                        <Time>PT2H45M</Time>
-                    </Journey>
-                    <SegmentReferences>SEG1-1</SegmentReferences>
-                </Flight>
-                <Flight FlightKey="FL2-1">
-                    <Journey>
-                        <Time>PT1H55M</Time>
-                    </Journey>
-                    <SegmentReferences>SEG2-1</SegmentReferences>
-                </Flight>
-            </FlightList>
-            <OriginDestinationList>
-                <OriginDestination OriginDestinationKey="OD1">
-                    <DepartureCode>NCE</DepartureCode>
-                    <ArrivalCode>EXT</ArrivalCode>
-                    <FlightReferences>FL1-1</FlightReferences>
-                </OriginDestination>
-                <OriginDestination OriginDestinationKey="OD2">
-                    <DepartureCode>EXT</DepartureCode>
-                    <ArrivalCode>NCE</ArrivalCode>
-                    <FlightReferences>FL2-1</FlightReferences>
-                </OriginDestination>
-            </OriginDestinationList>
             <PriceClassList>
                 <PriceClass ObjectKey="PC1">
                     <Name>FULLFLEX</Name>
@@ -224,13 +180,15 @@
                 </PriceClass>
             </PriceClassList>
             <ServiceList>
-                <Service ObjectKey="SV2">
-                    <ServiceID Owner="ZZ">0012</ServiceID>
-                    <Name>2*23kg bagages</Name>
-                    <Encoding />
+                <Service ObjectKey="SV1">
+                    <ServiceID Owner="ZZ">0001</ServiceID>
+                    <Name>1*23kg bagage(s)</Name>
+                    <Encoding>
+                        <Code>XBAG</Code>
+                    </Encoding>
                     <Descriptions>
                         <Description>
-                            <Text>2 bags, 23kg each</Text>
+                            <Text>1 bag(s), 23kg each</Text>
                         </Description>
                     </Descriptions>
                     <Settlement>
@@ -249,9 +207,8 @@
                     </Associations>
                 </Service>
                 <Service ObjectKey="SV4">
-                    <ServiceID Owner="ZZ">0013</ServiceID>
+                    <ServiceID Owner="ZZ">0002</ServiceID>
                     <Name>10000 miles</Name>
-                    <Encoding />
                     <Descriptions>
                         <Description>
                             <Text>Credits 10000 miles to your account.</Text>
@@ -273,9 +230,8 @@
                     </Associations>
                 </Service>
                 <Service ObjectKey="SV6">
-                    <ServiceID Owner="ZZ">0014</ServiceID>
+                    <ServiceID Owner="ZZ">0003</ServiceID>
                     <Name>Fasttrack</Name>
-                    <Encoding />
                     <Descriptions>
                         <Description>
                             <Text>Dedicated fast track security line</Text>
