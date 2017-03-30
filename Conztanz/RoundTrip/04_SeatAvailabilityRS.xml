@@ -1,4 +1,4 @@
-<SeatAvailabilityRS EchoToken="0ec6e8943fa007e4dfa35c2b7857b92cc747152c" TimeStamp="2017-03-21T20:32:34" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../SeatAvailabilityRS.xsd">
+<SeatAvailabilityRS EchoToken="eb03ba351025c6f69a7e69c9502313600fbbac0b" TimeStamp="2017-03-30T15:21:04" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../SeatAvailabilityRS.xsd">
     <Document>
         <Name>CONZTANZ NDC GATEWAY</Name>
         <ReferenceVersion>1.0</ReferenceVersion>
@@ -302,24 +302,39 @@
         </Cabin>
     </Flights>
     <DataLists>
+        <RecognizedTravelerList>
+            <RecognizedTraveler ObjectKey="PAX1">
+                <Name>
+                    <Surname>Smith</Surname>
+                    <Given>John</Given>
+                </Name>
+                <FQTVs>
+                    <AirlineID>ZZ</AirlineID>
+                    <Account>
+                        <Number>789456140</Number>
+                        <FQTVStatus>PLATINUM</FQTVStatus>
+                    </Account>
+                </FQTVs>
+            </RecognizedTraveler>
+        </RecognizedTravelerList>
         <FlightSegmentList>
             <FlightSegment SegmentKey="SEG1-1">
                 <Departure>
                     <AirportCode>NCE</AirportCode>
-                    <Date>2017-03-21</Date>
-                    <Time>20:32</Time>
+                    <Date>2017-03-22</Date>
+                    <Time>09:15</Time>
                     <AirportName>Cote D\\'Azur</AirportName>
                 </Departure>
                 <Arrival>
                     <AirportCode>EXT</AirportCode>
-                    <Date>2017-03-21</Date>
-                    <Time>20:32</Time>
+                    <Date>2017-03-22</Date>
+                    <Time>11:00</Time>
                     <AirportName>Exeter</AirportName>
                 </Arrival>
                 <MarketingCarrier>
                     <AirlineID>ZZ</AirlineID>
                     <Name>Conztanz airline</Name>
-                    <FlightNumber>6373</FlightNumber>
+                    <FlightNumber>9427</FlightNumber>
                 </MarketingCarrier>
                 <Equipment>
                     <AircraftCode>320</AircraftCode>
@@ -327,24 +342,24 @@
                 </Equipment>
                 <FlightDetail>
                     <FlightDuration>
-                        <Value>PT0H00M</Value>
+                        <Value>PT2H45M</Value>
                     </FlightDuration>
                 </FlightDetail>
             </FlightSegment>
         </FlightSegmentList>
         <ServiceList>
-            <Service ObjectKey="SEG1-1-SRVC-EXST-9A">
-                <ServiceID Owner="ZZ">o-SA-EXST-1-2867019-VN-YR</ServiceID>
-                <Name>Leg space seating</Name>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-1A">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-1398077-ZD-AM</ServiceID>
+                <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
                         <Code>A</Code>
                     </RFIC>
-                    <Code>EXST</Code>
+                    <Code>NSSB</Code>
                 </Encoding>
                 <Descriptions>
                     <Description>
-                        <Text>Extra leg space seat</Text>
+                        <Text>Front seat</Text>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -354,17 +369,89 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>3500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
-                    <SeatReference>SEG1-1-9A</SeatReference>
+                    <SeatReference>SEG1-1-1A</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-EXST-10A">
-                <ServiceID Owner="ZZ">o-SA-EXST-1-1607678-NE-YJ</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-2A">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-6101461-VH-FT</ServiceID>
+                <Name>Front seating</Name>
+                <Encoding>
+                    <RFIC>
+                        <Code>A</Code>
+                    </RFIC>
+                    <Code>NSSB</Code>
+                </Encoding>
+                <Descriptions>
+                    <Description>
+                        <Text>Front seat</Text>
+                    </Description>
+                </Descriptions>
+                <Settlement>
+                    <Method>
+                        <Code>AD</Code>
+                        <Definition>Internal Airline Document</Definition>
+                    </Method>
+                </Settlement>
+                <Price>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
+                </Price>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
+                    <Flight>
+                        <SegmentReferences>SEG1-1</SegmentReferences>
+                    </Flight>
+                    <SeatReference>SEG1-1-2A</SeatReference>
+                </Associations>
+            </Service>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-3A">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-7692242-IY-BR</ServiceID>
+                <Name>Front seating</Name>
+                <Encoding>
+                    <RFIC>
+                        <Code>A</Code>
+                    </RFIC>
+                    <Code>NSSB</Code>
+                </Encoding>
+                <Descriptions>
+                    <Description>
+                        <Text>Front seat</Text>
+                    </Description>
+                </Descriptions>
+                <Settlement>
+                    <Method>
+                        <Code>AD</Code>
+                        <Definition>Internal Airline Document</Definition>
+                    </Method>
+                </Settlement>
+                <Price>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
+                </Price>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
+                    <Flight>
+                        <SegmentReferences>SEG1-1</SegmentReferences>
+                    </Flight>
+                    <SeatReference>SEG1-1-3A</SeatReference>
+                </Associations>
+            </Service>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-EXST-10A">
+                <ServiceID Owner="ZZ">o-SA-EXST-1-0404728-IU-HQ</ServiceID>
                 <Name>Leg space seating</Name>
                 <Encoding>
                     <RFIC>
@@ -384,17 +471,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>3500</Total>
+                    <Total>875</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-10A</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-16A">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-1887217-TP-EE</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-16A">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-5083800-CF-FI</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -405,7 +496,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -416,16 +506,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-16A</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-17A">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-4360663-OT-QH</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-17A">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-6347222-IO-JX</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -436,7 +530,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -447,16 +540,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-17A</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-18A">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-4728134-FG-IU</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-18A">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-0620530-RB-CW</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -467,7 +564,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -478,16 +574,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-18A</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-19A">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-8251790-YR-SI</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-19A">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-2361072-SO-VF</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -498,7 +598,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -509,16 +608,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-19A</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-20A">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-4337411-LV-BY</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-20A">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-5881663-PB-OO</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -529,7 +632,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -540,16 +642,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-20A</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-1B">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-5591313-TF-SD</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-1B">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-3811752-FP-BY</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -569,17 +675,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-1B</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-2B">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-0320880-JY-YG</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-2B">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-6680282-HZ-PT</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -599,17 +709,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-2B</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-3B">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-4220603-EY-VV</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-3B">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-7432847-BU-JM</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -629,17 +743,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-3B</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-EXST-9B">
-                <ServiceID Owner="ZZ">o-SA-EXST-1-0767561-IX-WJ</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-EXST-9B">
+                <ServiceID Owner="ZZ">o-SA-EXST-1-4734333-VG-HR</ServiceID>
                 <Name>Leg space seating</Name>
                 <Encoding>
                     <RFIC>
@@ -659,17 +777,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>3500</Total>
+                    <Total>875</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-9B</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-17B">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-3702705-RC-QA</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-16B">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-7340679-PG-HS</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -680,7 +802,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -691,16 +812,54 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
+                    <Flight>
+                        <SegmentReferences>SEG1-1</SegmentReferences>
+                    </Flight>
+                    <SeatReference>SEG1-1-16B</SeatReference>
+                </Associations>
+            </Service>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-17B">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-1271089-AX-QG</ServiceID>
+                <Name>Free seating</Name>
+                <Encoding>
+                    <RFIC>
+                        <Code>A</Code>
+                    </RFIC>
+                    <Code>SEAT</Code>
+                </Encoding>
+                <Descriptions>
+                    <Description>
+                        <Text>Seat for free</Text>
+                    </Description>
+                </Descriptions>
+                <Settlement>
+                    <Method>
+                        <Code>AD</Code>
+                        <Definition>Internal Airline Document</Definition>
+                    </Method>
+                </Settlement>
+                <Price>
+                    <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
+                </Price>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-17B</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-18B">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-0486077-TS-BQ</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-18B">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-7517876-RH-NM</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -711,7 +870,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -722,16 +880,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-18B</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-19B">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-1684221-FX-FG</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-19B">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-8783950-BG-YO</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -742,7 +904,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -753,16 +914,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-19B</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-20B">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-8561902-OY-DN</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-20B">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-5326252-CZ-EE</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -773,7 +938,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -784,16 +948,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-20B</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-1C">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-1145584-LV-NN</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-1C">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-6688100-GJ-QS</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -813,17 +981,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-1C</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-2C">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-0931456-NL-MW</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-3C">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-3712893-PG-CN</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -843,47 +1015,89 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
-                    <Flight>
-                        <SegmentReferences>SEG1-1</SegmentReferences>
-                    </Flight>
-                    <SeatReference>SEG1-1-2C</SeatReference>
-                </Associations>
-            </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-3C">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-8487179-GI-XT</ServiceID>
-                <Name>Front seating</Name>
-                <Encoding>
-                    <RFIC>
-                        <Code>A</Code>
-                    </RFIC>
-                    <Code>NSSB</Code>
-                </Encoding>
-                <Descriptions>
-                    <Description>
-                        <Text>Front seat</Text>
-                    </Description>
-                </Descriptions>
-                <Settlement>
-                    <Method>
-                        <Code>AD</Code>
-                        <Definition>Internal Airline Document</Definition>
-                    </Method>
-                </Settlement>
-                <Price>
-                    <Total>2500</Total>
-                </Price>
-                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-3C</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-16C">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-2500850-WK-LP</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-EXST-9C">
+                <ServiceID Owner="ZZ">o-SA-EXST-1-0742074-KZ-XQ</ServiceID>
+                <Name>Leg space seating</Name>
+                <Encoding>
+                    <RFIC>
+                        <Code>A</Code>
+                    </RFIC>
+                    <Code>EXST</Code>
+                </Encoding>
+                <Descriptions>
+                    <Description>
+                        <Text>Extra leg space seat</Text>
+                    </Description>
+                </Descriptions>
+                <Settlement>
+                    <Method>
+                        <Code>AD</Code>
+                        <Definition>Internal Airline Document</Definition>
+                    </Method>
+                </Settlement>
+                <Price>
+                    <Total>875</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
+                </Price>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
+                    <Flight>
+                        <SegmentReferences>SEG1-1</SegmentReferences>
+                    </Flight>
+                    <SeatReference>SEG1-1-9C</SeatReference>
+                </Associations>
+            </Service>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-EXST-10C">
+                <ServiceID Owner="ZZ">o-SA-EXST-1-7475261-MI-WM</ServiceID>
+                <Name>Leg space seating</Name>
+                <Encoding>
+                    <RFIC>
+                        <Code>A</Code>
+                    </RFIC>
+                    <Code>EXST</Code>
+                </Encoding>
+                <Descriptions>
+                    <Description>
+                        <Text>Extra leg space seat</Text>
+                    </Description>
+                </Descriptions>
+                <Settlement>
+                    <Method>
+                        <Code>AD</Code>
+                        <Definition>Internal Airline Document</Definition>
+                    </Method>
+                </Settlement>
+                <Price>
+                    <Total>875</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
+                </Price>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
+                    <Flight>
+                        <SegmentReferences>SEG1-1</SegmentReferences>
+                    </Flight>
+                    <SeatReference>SEG1-1-10C</SeatReference>
+                </Associations>
+            </Service>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-16C">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-5818496-YH-HA</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -894,7 +1108,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -905,16 +1118,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-16C</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-17C">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-4360626-CH-MM</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-17C">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-7641884-FF-KR</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -925,7 +1142,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -936,16 +1152,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-17C</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-18C">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-3817440-QC-NT</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-18C">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-4077826-HN-VX</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -956,7 +1176,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -967,16 +1186,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-18C</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-19C">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-4589747-LI-CY</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-19C">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-5217932-UU-HD</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -987,7 +1210,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -998,16 +1220,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-19C</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-20C">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-0867194-QZ-VK</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-20C">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-0078322-UO-LR</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1018,7 +1244,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1029,16 +1254,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-20C</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-2D">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-4111362-BI-ED</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-1D">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-9740370-RX-LL</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1058,17 +1287,55 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
+                    <Flight>
+                        <SegmentReferences>SEG1-1</SegmentReferences>
+                    </Flight>
+                    <SeatReference>SEG1-1-1D</SeatReference>
+                </Associations>
+            </Service>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-2D">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-3065901-FX-QH</ServiceID>
+                <Name>Front seating</Name>
+                <Encoding>
+                    <RFIC>
+                        <Code>A</Code>
+                    </RFIC>
+                    <Code>NSSB</Code>
+                </Encoding>
+                <Descriptions>
+                    <Description>
+                        <Text>Front seat</Text>
+                    </Description>
+                </Descriptions>
+                <Settlement>
+                    <Method>
+                        <Code>AD</Code>
+                        <Definition>Internal Airline Document</Definition>
+                    </Method>
+                </Settlement>
+                <Price>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
+                </Price>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-2D</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-3D">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-1005091-ZM-JC</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-3D">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-0933868-VR-MW</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1088,17 +1355,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-3D</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-EXST-9D">
-                <ServiceID Owner="ZZ">o-SA-EXST-1-4404083-KC-NV</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-EXST-10D">
+                <ServiceID Owner="ZZ">o-SA-EXST-1-3961489-HK-VP</ServiceID>
                 <Name>Leg space seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1118,17 +1389,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>3500</Total>
+                    <Total>875</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
-                    <SeatReference>SEG1-1-9D</SeatReference>
+                    <SeatReference>SEG1-1-10D</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-16D">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-1945789-BD-OP</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-16D">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-3637457-MV-RD</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1139,7 +1414,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1150,16 +1424,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-16D</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-17D">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-0313751-NT-MR</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-17D">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-5493729-AE-FB</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1170,7 +1448,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1181,16 +1458,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-17D</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-18D">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-4591176-WY-OP</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-19D">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-0812662-FN-CY</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1201,7 +1482,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1212,47 +1492,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
-                    <Flight>
-                        <SegmentReferences>SEG1-1</SegmentReferences>
-                    </Flight>
-                    <SeatReference>SEG1-1-18D</SeatReference>
-                </Associations>
-            </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-19D">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-9472393-HG-HL</ServiceID>
-                <Name>Free seating</Name>
-                <Encoding>
-                    <RFIC>
-                        <Code>A</Code>
-                    </RFIC>
-                    <Code>SEAT</Code>
-                </Encoding>
-                <Descriptions>
-                    <Description>
-                        <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
-                    </Description>
-                </Descriptions>
-                <Settlement>
-                    <Method>
-                        <Code>AD</Code>
-                        <Definition>Internal Airline Document</Definition>
-                    </Method>
-                </Settlement>
-                <Price>
-                    <Total>0</Total>
-                </Price>
-                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-19D</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-20D">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-8538543-JU-VM</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-20D">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-6091095-GB-JI</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1263,7 +1516,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1274,16 +1526,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-20D</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-1E">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-5876582-EY-KE</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-2E">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-6990884-AO-YG</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1303,47 +1559,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
-                    <Flight>
-                        <SegmentReferences>SEG1-1</SegmentReferences>
-                    </Flight>
-                    <SeatReference>SEG1-1-1E</SeatReference>
-                </Associations>
-            </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-2E">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-8352617-RV-OI</ServiceID>
-                <Name>Front seating</Name>
-                <Encoding>
-                    <RFIC>
-                        <Code>A</Code>
-                    </RFIC>
-                    <Code>NSSB</Code>
-                </Encoding>
-                <Descriptions>
-                    <Description>
-                        <Text>Front seat</Text>
-                    </Description>
-                </Descriptions>
-                <Settlement>
-                    <Method>
-                        <Code>AD</Code>
-                        <Definition>Internal Airline Document</Definition>
-                    </Method>
-                </Settlement>
-                <Price>
-                    <Total>2500</Total>
-                </Price>
-                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-2E</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-3E">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-6328336-HD-WF</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-3E">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-4488444-QR-YV</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1363,17 +1593,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-3E</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-EXST-10E">
-                <ServiceID Owner="ZZ">o-SA-EXST-1-9864127-CV-MM</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-EXST-10E">
+                <ServiceID Owner="ZZ">o-SA-EXST-1-4673537-SV-GR</ServiceID>
                 <Name>Leg space seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1393,17 +1627,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>3500</Total>
+                    <Total>875</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-10E</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-16E">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-1620595-XS-XW</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-17E">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-3530877-BG-QH</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1414,7 +1652,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1425,47 +1662,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
-                    <Flight>
-                        <SegmentReferences>SEG1-1</SegmentReferences>
-                    </Flight>
-                    <SeatReference>SEG1-1-16E</SeatReference>
-                </Associations>
-            </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-17E">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-9646736-BW-II</ServiceID>
-                <Name>Free seating</Name>
-                <Encoding>
-                    <RFIC>
-                        <Code>A</Code>
-                    </RFIC>
-                    <Code>SEAT</Code>
-                </Encoding>
-                <Descriptions>
-                    <Description>
-                        <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
-                    </Description>
-                </Descriptions>
-                <Settlement>
-                    <Method>
-                        <Code>AD</Code>
-                        <Definition>Internal Airline Document</Definition>
-                    </Method>
-                </Settlement>
-                <Price>
-                    <Total>0</Total>
-                </Price>
-                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-17E</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-18E">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-4712550-CH-UY</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-18E">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-7730535-UC-TC</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1476,7 +1686,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1487,16 +1696,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-18E</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-20E">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-8875970-XR-SF</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-19E">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-6242652-TX-BL</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1507,7 +1720,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1518,16 +1730,54 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
+                    <Flight>
+                        <SegmentReferences>SEG1-1</SegmentReferences>
+                    </Flight>
+                    <SeatReference>SEG1-1-19E</SeatReference>
+                </Associations>
+            </Service>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-20E">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-7999316-RY-ZH</ServiceID>
+                <Name>Free seating</Name>
+                <Encoding>
+                    <RFIC>
+                        <Code>A</Code>
+                    </RFIC>
+                    <Code>SEAT</Code>
+                </Encoding>
+                <Descriptions>
+                    <Description>
+                        <Text>Seat for free</Text>
+                    </Description>
+                </Descriptions>
+                <Settlement>
+                    <Method>
+                        <Code>AD</Code>
+                        <Definition>Internal Airline Document</Definition>
+                    </Method>
+                </Settlement>
+                <Price>
+                    <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
+                </Price>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-20E</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-1F">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-5209343-DY-IT</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-NSSB-1F">
+                <ServiceID Owner="ZZ">o-SA-NSSB-1-5052269-MT-UJ</ServiceID>
                 <Name>Front seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1547,47 +1797,21 @@
                     </Method>
                 </Settlement>
                 <Price>
-                    <Total>2500</Total>
+                    <Total>625</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-1F</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-NSSB-2F">
-                <ServiceID Owner="ZZ">o-SA-NSSB-1-8393203-IR-KV</ServiceID>
-                <Name>Front seating</Name>
-                <Encoding>
-                    <RFIC>
-                        <Code>A</Code>
-                    </RFIC>
-                    <Code>NSSB</Code>
-                </Encoding>
-                <Descriptions>
-                    <Description>
-                        <Text>Front seat</Text>
-                    </Description>
-                </Descriptions>
-                <Settlement>
-                    <Method>
-                        <Code>AD</Code>
-                        <Definition>Internal Airline Document</Definition>
-                    </Method>
-                </Settlement>
-                <Price>
-                    <Total>2500</Total>
-                </Price>
-                <Associations>
-                    <Flight>
-                        <SegmentReferences>SEG1-1</SegmentReferences>
-                    </Flight>
-                    <SeatReference>SEG1-1-2F</SeatReference>
-                </Associations>
-            </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-16F">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-3667543-QA-WW</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-16F">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-4544394-LU-LG</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1598,7 +1822,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1609,16 +1832,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-16F</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-17F">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-1104085-FB-MQ</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-17F">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-4658509-UJ-NM</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1629,7 +1856,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1640,16 +1866,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-17F</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-18F">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-9080400-YE-LD</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-18F">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-9687974-EO-VE</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1660,7 +1890,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1671,16 +1900,20 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
                     <SeatReference>SEG1-1-18F</SeatReference>
                 </Associations>
             </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-19F">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-7270133-SS-FI</ServiceID>
+            <Service ObjectKey="PAX1-SEG1-1-SRVC-SEAT-20F">
+                <ServiceID Owner="ZZ">o-SA-SEAT-1-0724867-ZK-BQ</ServiceID>
                 <Name>Free seating</Name>
                 <Encoding>
                     <RFIC>
@@ -1691,7 +1924,6 @@
                 <Descriptions>
                     <Description>
                         <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
                     </Description>
                 </Descriptions>
                 <Settlement>
@@ -1702,39 +1934,12 @@
                 </Settlement>
                 <Price>
                     <Total>0</Total>
+                    <PassengerReferences>PAX1</PassengerReferences>
                 </Price>
                 <Associations>
-                    <Flight>
-                        <SegmentReferences>SEG1-1</SegmentReferences>
-                    </Flight>
-                    <SeatReference>SEG1-1-19F</SeatReference>
-                </Associations>
-            </Service>
-            <Service ObjectKey="SEG1-1-SRVC-SEAT-20F">
-                <ServiceID Owner="ZZ">o-SA-SEAT-1-6859223-BZ-YU</ServiceID>
-                <Name>Free seating</Name>
-                <Encoding>
-                    <RFIC>
-                        <Code>A</Code>
-                    </RFIC>
-                    <Code>SEAT</Code>
-                </Encoding>
-                <Descriptions>
-                    <Description>
-                        <Text>Seat for free</Text>
-                        <Application>Free of charge</Application>
-                    </Description>
-                </Descriptions>
-                <Settlement>
-                    <Method>
-                        <Code>AD</Code>
-                        <Definition>Internal Airline Document</Definition>
-                    </Method>
-                </Settlement>
-                <Price>
-                    <Total>0</Total>
-                </Price>
-                <Associations>
+                    <Traveler>
+                        <TravelerReferences>PAX1</TravelerReferences>
+                    </Traveler>
                     <Flight>
                         <SegmentReferences>SEG1-1</SegmentReferences>
                     </Flight>
@@ -1760,6 +1965,11 @@
                             <Code>E</Code>
                         </Characteristic>
                     </Characteristics>
+                    <Associations>
+                        <Services>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-1398077-ZD-AM</ServiceID>
+                        </Services>
+                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-2A">
@@ -1773,6 +1983,11 @@
                             <Code>FC</Code>
                         </Characteristic>
                     </Characteristics>
+                    <Associations>
+                        <Services>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-6101461-VH-FT</ServiceID>
+                        </Services>
+                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-3A">
@@ -1786,6 +2001,11 @@
                             <Code>FC</Code>
                         </Characteristic>
                     </Characteristics>
+                    <Associations>
+                        <Services>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-7692242-IY-BR</ServiceID>
+                        </Services>
+                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-4A">
@@ -1842,11 +2062,6 @@
                             <Code>L</Code>
                         </Characteristic>
                     </Characteristics>
-                    <Associations>
-                        <Services>
-                            <ServiceID Owner="ZZ">o-SA-EXST-1-2867019-VN-YR</ServiceID>
-                        </Services>
-                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-10A">
@@ -1865,7 +2080,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-EXST-1-1607678-NE-YJ</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-EXST-1-0404728-IU-HQ</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -1918,7 +2133,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-1887217-TP-EE</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-5083800-CF-FI</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -1931,7 +2146,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4360663-OT-QH</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-6347222-IO-JX</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -1944,7 +2159,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4728134-FG-IU</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-0620530-RB-CW</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -1957,7 +2172,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-8251790-YR-SI</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-2361072-SO-VF</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -1970,7 +2185,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4337411-LV-BY</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-5881663-PB-OO</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2082,7 +2297,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-5591313-TF-SD</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-3811752-FP-BY</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2100,7 +2315,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-0320880-JY-YG</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-6680282-HZ-PT</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2118,7 +2333,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-4220603-EY-VV</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-7432847-BU-JM</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2179,7 +2394,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-EXST-1-0767561-IX-WJ</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-EXST-1-4734333-VG-HR</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2246,6 +2461,11 @@
                     <Row>
                         <Number>16</Number>
                     </Row>
+                    <Associations>
+                        <Services>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-7340679-PG-HS</ServiceID>
+                        </Services>
+                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-17B">
@@ -2256,7 +2476,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-3702705-RC-QA</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-1271089-AX-QG</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2269,7 +2489,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-0486077-TS-BQ</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-7517876-RH-NM</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2282,7 +2502,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-1684221-FX-FG</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-8783950-BG-YO</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2295,7 +2515,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-8561902-OY-DN</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-5326252-CZ-EE</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2407,7 +2627,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-1145584-LV-NN</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-6688100-GJ-QS</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2423,11 +2643,6 @@
                             <Code>FC</Code>
                         </Characteristic>
                     </Characteristics>
-                    <Associations>
-                        <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-0931456-NL-MW</ServiceID>
-                        </Services>
-                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-3C">
@@ -2443,7 +2658,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-8487179-GI-XT</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-3712893-PG-CN</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2502,6 +2717,11 @@
                             <Code>L</Code>
                         </Characteristic>
                     </Characteristics>
+                    <Associations>
+                        <Services>
+                            <ServiceID Owner="ZZ">o-SA-EXST-1-0742074-KZ-XQ</ServiceID>
+                        </Services>
+                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-10C">
@@ -2518,6 +2738,11 @@
                             <Code>L</Code>
                         </Characteristic>
                     </Characteristics>
+                    <Associations>
+                        <Services>
+                            <ServiceID Owner="ZZ">o-SA-EXST-1-7475261-MI-WM</ServiceID>
+                        </Services>
+                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-11C">
@@ -2568,7 +2793,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-2500850-WK-LP</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-5818496-YH-HA</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2581,7 +2806,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4360626-CH-MM</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-7641884-FF-KR</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2594,7 +2819,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-3817440-QC-NT</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4077826-HN-VX</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2607,7 +2832,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4589747-LI-CY</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-5217932-UU-HD</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2620,7 +2845,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-0867194-QZ-VK</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-0078322-UO-LR</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2727,6 +2952,11 @@
                             <Code>E</Code>
                         </Characteristic>
                     </Characteristics>
+                    <Associations>
+                        <Services>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-9740370-RX-LL</ServiceID>
+                        </Services>
+                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-2D">
@@ -2742,7 +2972,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-4111362-BI-ED</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-3065901-FX-QH</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2760,7 +2990,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-1005091-ZM-JC</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-0933868-VR-MW</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2819,11 +3049,6 @@
                             <Code>L</Code>
                         </Characteristic>
                     </Characteristics>
-                    <Associations>
-                        <Services>
-                            <ServiceID Owner="ZZ">o-SA-EXST-1-4404083-KC-NV</ServiceID>
-                        </Services>
-                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-10D">
@@ -2840,6 +3065,11 @@
                             <Code>L</Code>
                         </Characteristic>
                     </Characteristics>
+                    <Associations>
+                        <Services>
+                            <ServiceID Owner="ZZ">o-SA-EXST-1-3961489-HK-VP</ServiceID>
+                        </Services>
+                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-11D">
@@ -2890,7 +3120,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-1945789-BD-OP</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-3637457-MV-RD</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2903,7 +3133,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-0313751-NT-MR</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-5493729-AE-FB</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2914,11 +3144,6 @@
                     <Row>
                         <Number>18</Number>
                     </Row>
-                    <Associations>
-                        <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4591176-WY-OP</ServiceID>
-                        </Services>
-                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-19D">
@@ -2929,7 +3154,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-9472393-HG-HL</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-0812662-FN-CY</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -2942,7 +3167,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-8538543-JU-VM</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-6091095-GB-JI</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3049,11 +3274,6 @@
                             <Code>E</Code>
                         </Characteristic>
                     </Characteristics>
-                    <Associations>
-                        <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-5876582-EY-KE</ServiceID>
-                        </Services>
-                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-2E">
@@ -3069,7 +3289,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-8352617-RV-OI</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-6990884-AO-YG</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3087,7 +3307,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-6328336-HD-WF</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-4488444-QR-YV</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3164,7 +3384,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-EXST-1-9864127-CV-MM</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-EXST-1-4673537-SV-GR</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3215,11 +3435,6 @@
                     <Row>
                         <Number>16</Number>
                     </Row>
-                    <Associations>
-                        <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-1620595-XS-XW</ServiceID>
-                        </Services>
-                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-17E">
@@ -3230,7 +3445,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-9646736-BW-II</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-3530877-BG-QH</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3243,7 +3458,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4712550-CH-UY</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-7730535-UC-TC</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3254,6 +3469,11 @@
                     <Row>
                         <Number>19</Number>
                     </Row>
+                    <Associations>
+                        <Services>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-6242652-TX-BL</ServiceID>
+                        </Services>
+                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-20E">
@@ -3264,7 +3484,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-8875970-XR-SF</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-7999316-RY-ZH</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3376,7 +3596,7 @@
                     </Characteristics>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-5209343-DY-IT</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-NSSB-1-5052269-MT-UJ</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3392,11 +3612,6 @@
                             <Code>FC</Code>
                         </Characteristic>
                     </Characteristics>
-                    <Associations>
-                        <Services>
-                            <ServiceID Owner="ZZ">o-SA-NSSB-1-8393203-IR-KV</ServiceID>
-                        </Services>
-                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-3F">
@@ -3532,7 +3747,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-3667543-QA-WW</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4544394-LU-LG</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3545,7 +3760,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-1104085-FB-MQ</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-4658509-UJ-NM</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3558,7 +3773,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-9080400-YE-LD</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-9687974-EO-VE</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3569,11 +3784,6 @@
                     <Row>
                         <Number>19</Number>
                     </Row>
-                    <Associations>
-                        <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-7270133-SS-FI</ServiceID>
-                        </Services>
-                    </Associations>
                 </Location>
             </Seats>
             <Seats ListKey="S-SEG1-1-20F">
@@ -3584,7 +3794,7 @@
                     </Row>
                     <Associations>
                         <Services>
-                            <ServiceID Owner="ZZ">o-SA-SEAT-1-6859223-BZ-YU</ServiceID>
+                            <ServiceID Owner="ZZ">o-SA-SEAT-1-0724867-ZK-BQ</ServiceID>
                         </Services>
                     </Associations>
                 </Location>
@@ -3684,7 +3894,40 @@
             <ShopMetadataGroup>
                 <Offer>
                     <OfferMetadatas>
-                        <OfferMetadata MetadataKey="OMT-S-1" refs="SEG1-1-SRVC-EXST-9A SEG1-1-SRVC-EXST-10A SEG1-1-SRVC-SEAT-16A SEG1-1-SRVC-SEAT-17A SEG1-1-SRVC-SEAT-18A SEG1-1-SRVC-SEAT-19A SEG1-1-SRVC-SEAT-20A SEG1-1-SRVC-NSSB-1B SEG1-1-SRVC-NSSB-2B SEG1-1-SRVC-NSSB-3B SEG1-1-SRVC-EXST-9B SEG1-1-SRVC-SEAT-17B SEG1-1-SRVC-SEAT-18B SEG1-1-SRVC-SEAT-19B SEG1-1-SRVC-SEAT-20B SEG1-1-SRVC-NSSB-1C SEG1-1-SRVC-NSSB-2C SEG1-1-SRVC-NSSB-3C SEG1-1-SRVC-SEAT-16C SEG1-1-SRVC-SEAT-17C SEG1-1-SRVC-SEAT-18C SEG1-1-SRVC-SEAT-19C SEG1-1-SRVC-SEAT-20C SEG1-1-SRVC-NSSB-2D SEG1-1-SRVC-NSSB-3D SEG1-1-SRVC-EXST-9D SEG1-1-SRVC-SEAT-16D SEG1-1-SRVC-SEAT-17D SEG1-1-SRVC-SEAT-18D SEG1-1-SRVC-SEAT-19D SEG1-1-SRVC-SEAT-20D SEG1-1-SRVC-NSSB-1E SEG1-1-SRVC-NSSB-2E SEG1-1-SRVC-NSSB-3E SEG1-1-SRVC-EXST-10E SEG1-1-SRVC-SEAT-16E SEG1-1-SRVC-SEAT-17E SEG1-1-SRVC-SEAT-18E SEG1-1-SRVC-SEAT-20E SEG1-1-SRVC-NSSB-1F SEG1-1-SRVC-NSSB-2F SEG1-1-SRVC-SEAT-16F SEG1-1-SRVC-SEAT-17F SEG1-1-SRVC-SEAT-18F SEG1-1-SRVC-SEAT-19F SEG1-1-SRVC-SEAT-20F">
+                        <OfferMetadata MetadataKey="OMT-S-1" refs="PAX1-SEG1-1-SRVC-NSSB-1A PAX1-SEG1-1-SRVC-NSSB-2A PAX1-SEG1-1-SRVC-NSSB-3A PAX1-SEG1-1-SRVC-EXST-10A PAX1-SEG1-1-SRVC-SEAT-16A PAX1-SEG1-1-SRVC-SEAT-17A PAX1-SEG1-1-SRVC-SEAT-18A PAX1-SEG1-1-SRVC-SEAT-19A PAX1-SEG1-1-SRVC-SEAT-20A PAX1-SEG1-1-SRVC-NSSB-1B PAX1-SEG1-1-SRVC-NSSB-2B PAX1-SEG1-1-SRVC-NSSB-3B PAX1-SEG1-1-SRVC-EXST-9B PAX1-SEG1-1-SRVC-SEAT-16B PAX1-SEG1-1-SRVC-SEAT-17B PAX1-SEG1-1-SRVC-SEAT-18B PAX1-SEG1-1-SRVC-SEAT-19B PAX1-SEG1-1-SRVC-SEAT-20B PAX1-SEG1-1-SRVC-NSSB-1C PAX1-SEG1-1-SRVC-NSSB-3C PAX1-SEG1-1-SRVC-EXST-9C PAX1-SEG1-1-SRVC-EXST-10C PAX1-SEG1-1-SRVC-SEAT-16C PAX1-SEG1-1-SRVC-SEAT-17C PAX1-SEG1-1-SRVC-SEAT-18C PAX1-SEG1-1-SRVC-SEAT-19C PAX1-SEG1-1-SRVC-SEAT-20C PAX1-SEG1-1-SRVC-NSSB-1D PAX1-SEG1-1-SRVC-NSSB-2D PAX1-SEG1-1-SRVC-NSSB-3D PAX1-SEG1-1-SRVC-EXST-10D PAX1-SEG1-1-SRVC-SEAT-16D PAX1-SEG1-1-SRVC-SEAT-17D PAX1-SEG1-1-SRVC-SEAT-19D PAX1-SEG1-1-SRVC-SEAT-20D PAX1-SEG1-1-SRVC-NSSB-2E PAX1-SEG1-1-SRVC-NSSB-3E PAX1-SEG1-1-SRVC-EXST-10E PAX1-SEG1-1-SRVC-SEAT-17E PAX1-SEG1-1-SRVC-SEAT-18E PAX1-SEG1-1-SRVC-SEAT-19E PAX1-SEG1-1-SRVC-SEAT-20E PAX1-SEG1-1-SRVC-NSSB-1F PAX1-SEG1-1-SRVC-SEAT-16F PAX1-SEG1-1-SRVC-SEAT-17F PAX1-SEG1-1-SRVC-SEAT-18F PAX1-SEG1-1-SRVC-SEAT-20F">
+                            <AugmentationPoint>
+                                <AugPoint>
+                                <DiscountMetadatas xmlns="http://ndc.conztanz.com/schema"> 
+                                    <DiscountMetadata  refs="PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB PAX1-SEG1-1-SRVC-NSSB">
+                                        <Price>
+                                            <Original>2500</Original>
+                                        </Price>
+                                        <Discount>
+                                            <Type>Percentage</Type>
+                                            <Value>75</Value>
+                                        </Discount>
+                                    </DiscountMetadata>
+                                    <DiscountMetadata refs="PAX1-SEG1-1-SRVC-EXST PAX1-SEG1-1-SRVC-EXST PAX1-SEG1-1-SRVC-EXST PAX1-SEG1-1-SRVC-EXST PAX1-SEG1-1-SRVC-EXST PAX1-SEG1-1-SRVC-EXST">
+                                        <Price>
+                                            <Original>3500</Original>
+                                        </Price>
+                                        <Discount>
+                                            <Type>Percentage</Type>
+                                            <Value>75</Value>
+                                        </Discount>
+                                    </DiscountMetadata>
+                                    <DiscountMetadata refs="PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT PAX1-SEG1-1-SRVC-SEAT">
+                                        <Price>
+                                            <Original>0</Original>
+                                        </Price>
+                                        <Discount>
+                                            <Type>Percentage</Type>
+                                            <Value>75</Value>
+                                        </Discount>
+                                    </DiscountMetadata>
+                                    </DiscountMetadatas>
+                                </AugPoint>
+                            </AugmentationPoint>
                             <ATPCO>
                                 <Attributes>
                                     <Group>
@@ -3699,20 +3942,20 @@
                     <SeatMetadatas>
                         <SeatMetadata MetadataKey="SMD-1" refs="S-SEG1-1-1A">
                             <SeatStatus>
-                                <Code>O</Code>
-                                <Definition>Occupied seat</Definition>
+                                <Code>F</Code>
+                                <Definition>Free seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-2" refs="S-SEG1-1-2A">
                             <SeatStatus>
-                                <Code>O</Code>
-                                <Definition>Occupied seat</Definition>
+                                <Code>F</Code>
+                                <Definition>Free seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-3" refs="S-SEG1-1-3A">
                             <SeatStatus>
-                                <Code>O</Code>
-                                <Definition>Occupied seat</Definition>
+                                <Code>F</Code>
+                                <Definition>Free seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-4" refs="S-SEG1-1-4A">
@@ -3747,8 +3990,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-9" refs="S-SEG1-1-9A">
                             <SeatStatus>
-                                <Code>F</Code>
-                                <Definition>Free seat</Definition>
+                                <Code>O</Code>
+                                <Definition>Occupied seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-10" refs="S-SEG1-1-10A">
@@ -3969,8 +4212,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-46" refs="S-SEG1-1-16B">
                             <SeatStatus>
-                                <Code>O</Code>
-                                <Definition>Occupied seat</Definition>
+                                <Code>F</Code>
+                                <Definition>Free seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-47" refs="S-SEG1-1-17B">
@@ -4065,8 +4308,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-62" refs="S-SEG1-1-2C">
                             <SeatStatus>
-                                <Code>F</Code>
-                                <Definition>Free seat</Definition>
+                                <Code>O</Code>
+                                <Definition>Occupied seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-63" refs="S-SEG1-1-3C">
@@ -4107,14 +4350,14 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-69" refs="S-SEG1-1-9C">
                             <SeatStatus>
-                                <Code>O</Code>
-                                <Definition>Occupied seat</Definition>
+                                <Code>F</Code>
+                                <Definition>Free seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-70" refs="S-SEG1-1-10C">
                             <SeatStatus>
-                                <Code>O</Code>
-                                <Definition>Occupied seat</Definition>
+                                <Code>F</Code>
+                                <Definition>Free seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-71" refs="S-SEG1-1-11C">
@@ -4239,8 +4482,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-91" refs="S-SEG1-1-1D">
                             <SeatStatus>
-                                <Code>O</Code>
-                                <Definition>Occupied seat</Definition>
+                                <Code>F</Code>
+                                <Definition>Free seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-92" refs="S-SEG1-1-2D">
@@ -4287,14 +4530,14 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-99" refs="S-SEG1-1-9D">
                             <SeatStatus>
-                                <Code>F</Code>
-                                <Definition>Free seat</Definition>
+                                <Code>O</Code>
+                                <Definition>Occupied seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-100" refs="S-SEG1-1-10D">
                             <SeatStatus>
-                                <Code>O</Code>
-                                <Definition>Occupied seat</Definition>
+                                <Code>F</Code>
+                                <Definition>Free seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-101" refs="S-SEG1-1-11D">
@@ -4341,8 +4584,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-108" refs="S-SEG1-1-18D">
                             <SeatStatus>
-                                <Code>F</Code>
-                                <Definition>Free seat</Definition>
+                                <Code>O</Code>
+                                <Definition>Occupied seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-109" refs="S-SEG1-1-19D">
@@ -4419,8 +4662,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-121" refs="S-SEG1-1-1E">
                             <SeatStatus>
-                                <Code>F</Code>
-                                <Definition>Free seat</Definition>
+                                <Code>O</Code>
+                                <Definition>Occupied seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-122" refs="S-SEG1-1-2E">
@@ -4509,8 +4752,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-136" refs="S-SEG1-1-16E">
                             <SeatStatus>
-                                <Code>F</Code>
-                                <Definition>Free seat</Definition>
+                                <Code>O</Code>
+                                <Definition>Occupied seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-137" refs="S-SEG1-1-17E">
@@ -4527,8 +4770,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-139" refs="S-SEG1-1-19E">
                             <SeatStatus>
-                                <Code>O</Code>
-                                <Definition>Occupied seat</Definition>
+                                <Code>F</Code>
+                                <Definition>Free seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-140" refs="S-SEG1-1-20E">
@@ -4605,8 +4848,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-152" refs="S-SEG1-1-2F">
                             <SeatStatus>
-                                <Code>F</Code>
-                                <Definition>Free seat</Definition>
+                                <Code>O</Code>
+                                <Definition>Occupied seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-153" refs="S-SEG1-1-3F">
@@ -4707,8 +4950,8 @@
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-169" refs="S-SEG1-1-19F">
                             <SeatStatus>
-                                <Code>F</Code>
-                                <Definition>Free seat</Definition>
+                                <Code>O</Code>
+                                <Definition>Occupied seat</Definition>
                             </SeatStatus>
                         </SeatMetadata>
                         <SeatMetadata MetadataKey="SMD-170" refs="S-SEG1-1-20F">
